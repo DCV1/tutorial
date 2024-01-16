@@ -1,0 +1,35 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+root: intro
+format: jb-book
+defaults:
+  numbered: true
+parts:
+- caption: 소개
+  chapters:
+  - file: docs/part1/how-to-use-genai
+    sections:
+    - file: docs/part1/tools
+    - file: docs/part1/reference-web
+- caption: 이미지/영상 생성
+  chapters:
+  - file: docs/part2/stable-diffusion-deforum
+    sections:
+    - file: docs/part2/artworks
+    - file: docs/part2/start
+    - file: docs/part2/deforum
+    - file: docs/part2/parameters
+    - file: docs/part2/audio-reactive
+    - file: docs/part2/problem-solving
+- caption: 모델 서빙
+  chapters:
+  - file: docs/part3/wireframe
+  - file: docs/part3/frontend
+  - file: docs/part3/backend
+- caption: 결론
+  chapters:
+  - file: docs/part4/conclusion
+- caption: 레퍼런스
+  chapters:
+  - file: docs/part5/theories
