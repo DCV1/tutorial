@@ -19,7 +19,4 @@ jupyter-book build tutorial
 2. 수정한 .md 파일은 main branch에 pull requests 하기
    * 파일 업로드로 하시는게 가장 편할 듯 합니다.
 
-```{tip} MyST로 내 문서
-화려하게 꾸미는 방법
-```
-[****클릭****](https://jupyterbook.org/en/stable/reference/cheatsheet.html)
+[MyST로 내 문서 화려하게 꾸미는 방법](https://jupyterbook.org/en/stable/reference/cheatsheet.html)
