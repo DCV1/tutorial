@@ -2,7 +2,7 @@
 
 ## Prompt Engineering
 
-![Untitled](%5BJupyterBook%5D%20Prompt%200eb82e1836364addb5accdb930b00626/Untitled.png)
+![Untitled](media_prompt-enginering/Untitled.png)
 
 ### General Tips
 
@@ -13,11 +13,11 @@
     - **nsfw, nude, censored** : 성인 및 유해 컨텐츠 생성 제한
     - **bad anatomy** : 부자연스러운 신체표현이 개선됨
         
-        ![One white man is dancing, detailed, realistic](%5BJupyterBook%5D%20Prompt%200eb82e1836364addb5accdb930b00626/original.gif)
+        ![One white man is dancing, detailed, realistic](media_prompt-enginering/original.gif)
         
         One white man is dancing, detailed, realistic
         
-        ![One white man is dancing, detailed, realistic, —neg bad arms, bad anatomy, bad fingers](%5BJupyterBook%5D%20Prompt%200eb82e1836364addb5accdb930b00626/add_negative_prompts.gif)
+        ![One white man is dancing, detailed, realistic, —neg bad arms, bad anatomy, bad fingers](media_prompt-enginering/add_negative_prompts.gif)
         
         One white man is dancing, detailed, realistic, —neg bad arms, bad anatomy, bad fingers
         
@@ -35,15 +35,15 @@
 4. Layout 관련 Prompt
     - in the style of **grid composition**: 이미지가 격자 모양으로 배치되지만 이미지 배경에 격자무늬가 생김
         
-        ![Untitled](%5BJupyterBook%5D%20Prompt%200eb82e1836364addb5accdb930b00626/Untitled%201.png)
+        ![Untitled](media_prompt-enginering/Untitled%201.png)
         
     - in the style of **tile composition**: 이미지 배경의 격자무늬는 사라지지만 이미지 배치가 격자가 아닌 자유로운 배치로 배치됨
         
-        ![Untitled](%5BJupyterBook%5D%20Prompt%200eb82e1836364addb5accdb930b00626/Untitled%202.png)
+        ![Untitled](media_prompt-enginering/Untitled%202.png)
         
     - in the style of **grid layout**: 이미지가 격자 모양으로 배치되고, 격자무늬도 완화됨
         
-        ![Untitled](%5BJupyterBook%5D%20Prompt%200eb82e1836364addb5accdb930b00626/Untitled%203.png)
+        ![Untitled](media_prompt-enginering/Untitled%203.png)
         
 5. 주로 예술작품을 prompt에 작성하게 되면 액자 프레임이 생성되는 경향이 있음
     - 특히 zoom out 하게 되면 테두리에 줄이 생기는 현상이 좀 더 빈번하게 생기는 듯함
@@ -56,9 +56,9 @@
 
 1. 영상 색감이 첫 이미지 색감을 따라가는 경향이 있음
     
-    ![output1.gif](%5BJupyterBook%5D%20Prompt%200eb82e1836364addb5accdb930b00626/output1.gif)
+    ![output1.gif](media_prompt-enginering/output1.gif)
     
-    ![output2.gif](%5BJupyterBook%5D%20Prompt%200eb82e1836364addb5accdb930b00626/output2.gif)
+    ![output2.gif](media_prompt-enginering/output2.gif)
     
 
 1. Camera movement를 한 방향으로 움직일 때 사람이나 물체를 많이 넣으면 어색함
