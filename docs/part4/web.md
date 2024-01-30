@@ -9,7 +9,7 @@ github 주소에 들어가서 안내에 따라 각각 설치하시면 됩니다.
 
 이 코드는 unimaker의 backend api 구현을 위해서 deforum 코드에서 api 부분만 수정한 코드임을 참고바랍니다.
 
-## [frontend]()
+## [frontend](https://github.com/DCV1/unimaker-frontend)
 터미널에서 명령어
 
 - yarn
@@ -19,7 +19,7 @@ github 주소에 들어가서 안내에 따라 각각 설치하시면 됩니다.
 
 ## 사이트 이용방법
 
-[localhost:3000](http://localhost:3000) 으로 들어가면 다음과 같은 화면이 나옵니다.
+위 과정을 모두 거친 후, [localhost:3000](http://localhost:3000) 으로 들어가면 다음과 같은 화면이 나옵니다.
 
 1. 영상 만들기 클릭
 
@@ -31,13 +31,11 @@ github 주소에 들어가서 안내에 따라 각각 설치하시면 됩니다.
 
 ![Untitled](web/Untitled%201.png)
 
-1. 이미지를 선택하고 상단에 ‘이 이미지 선택 →’ 버튼을 누릅니다.
+2. 이미지를 선택하고 상단에 ‘이 이미지 선택 →’ 버튼을 누릅니다.
 - 제작하고 싶은 뮤직비디오의 분위기를 정하는 이미지입니다. 영상 전체에 영향을 끼칠 수 있으니 참고바랍니다.
 
 ![Untitled](web/Untitled%202.png)
 
-1.  각 항목별로 옵션을 선택하면, 뮤직 비디오 만들기 버튼이 활성화 됩니다. 해당 버튼을 클릭하면 영상이 제작되기 시작합니다. 
+3.  각 항목별로 옵션을 선택하면, 뮤직 비디오 만들기 버튼이 활성화 됩니다. 해당 버튼을 클릭하면 영상이 제작되기 시작합니다. 
 
-![Untitled](web/Untitled%203.png)
-
-![Untitled](web/Untitled%204.png)
+![Untitled](web/unimaker_demo3.png)
