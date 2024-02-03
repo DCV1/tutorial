@@ -1,10 +1,9 @@
 # Prompt Engineering
 
-## Prompt Engineering
 
 ![Untitled](media-prompt-engineering/Untitled.png)
 
-### General Tips
+## General Tips
 
 1. Negative Prompts
     - **worst quality, normal quality, low quality, low res, blurry, text, watermark, logo, banner, extra digits, cropped, jpeg artifacts, signature, username, error, sketch ,duplicate, ugly, monochrome, horror, geometry, mutation, disgusting**  : 전반적인 이미지 품질이 올라감
@@ -52,7 +51,7 @@
 7. Prompt가 너무 길어지면 오히려 반영을 잘 못함
 8. CLIP scale 값을 내리면 prompt를 매우 잘 반영함
 
-### Deforum 관련 Tips
+## Deforum 관련 Tips
 
 1. 영상 색감이 첫 이미지 색감을 따라가는 경향이 있음
     
@@ -65,7 +64,7 @@
     - 객체, 스타일 순으로 넣는 것이 좋음
 4. 사람과 비행기 등 구체적인 묘사가 필요한 객체는 어색한 경우가 많으므로 최대한 배제하는 것이 좋음
 
-### Prompt 구상 방법
+## Prompt 구상 방법
 
 - **현욱**
     - HTML 구조로 생성해보기
