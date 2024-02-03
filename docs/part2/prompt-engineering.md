@@ -1,4 +1,4 @@
-# [JupyterBook] Prompt
+# Prompt Engineering
 
 ## Prompt Engineering
 
