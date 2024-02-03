@@ -144,4 +144,4 @@
     - Midjourney에서 원하는 느낌의 이미지를 생성 후, 생성된 이미지를 다시 Midjourney에서 describe 기능을 이용해 표현하도록 만듬
     - 생성된 describe prompt 4개 중 가장 이미지와 어울리는 prompt를 고르고, 3줄이상 넘어갈 경우 2줄 이내로 줄임
         
-        ![midjourney.png](media-prompt-engineering/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-01-22_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_1.49.10.png)
+        ![midjourney.png](media-prompt-engineering/midjourney.png)
