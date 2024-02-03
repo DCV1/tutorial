@@ -12,11 +12,14 @@
     - **bad anatomy, bad hands, three hands, three legs, bad arms, missing legs, missing arms, poorly drawn face, bad face, fused face, cloned face, worst face, three crus, extra crus, fused crus, worst feet, three feet, fused feet, fused thigh, three thigh, fused thigh, extra thigh, worst thigh, missing fingers, extra fingers, ugly fingers, long fingers, horn, extra eyes, huge eyes, 2girl, amputation, disconnected limbs, cartoon, cg, 3d, unreal, animate** : 사실적인 캐릭터 묘사에 좋음
     - **nsfw, nude, censored** : 성인 및 유해 컨텐츠 생성 제한
     - **bad anatomy** : 부자연스러운 신체표현이 개선됨
+      
         ![original.gif](media-prompt-engineering/original.gif)
-        One white man is dancing, detailed, realistic
+
+          One white man is dancing, detailed, realistic
         
         ![add_negative_prompts.gif](media-prompt-engineering/add_negative_prompts.gif)
-        One white man is dancing, detailed, realistic, —neg bad arms, bad anatomy, bad fingers
+
+          One white man is dancing, detailed, realistic, —neg bad arms, bad anatomy, bad fingers
         
     - **bad face, people** : positive에 사람을 넣을 경우 사람 뒷모습이 주로 나옴
     - **bad arms** : positive에 사람을 넣을 경우 상반신이 주로 나옴
@@ -68,9 +71,9 @@
     - HTML 구조로 생성해보기
         
         ```
-        **<object> a woman standing inside a field of flowers 
+        <object> a woman standing inside a field of flowers 
         <large t> Draw the portrait of the most beautiful Asian girl. She has long black hair and a radiant smile. Her eyes are large and bright, and her skin is clear and smooth. 
-        <small t> nikon d850, 32k uhd, sandara tang, colorful pop, miwa komatsu, synchromism, close up, miwa komatsu, flutter**
+        <small t> nikon d850, 32k uhd, sandara tang, colorful pop, miwa komatsu, synchromism, close up, miwa komatsu, flutter
         ```
         
     - 생성형 모델에서 프롬프트는 장황한 설명보다는 문법구조를 갖춘 형태가 LLM과 대화하기 더 수월함
@@ -141,4 +144,4 @@
     - Midjourney에서 원하는 느낌의 이미지를 생성 후, 생성된 이미지를 다시 Midjourney에서 describe 기능을 이용해 표현하도록 만듬
     - 생성된 describe prompt 4개 중 가장 이미지와 어울리는 prompt를 고르고, 3줄이상 넘어갈 경우 2줄 이내로 줄임
         
-        ![스크린샷 2024-01-22 오후 1.49.10.png](media-prompt-engineering/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-01-22_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_1.49.10.png)
+        ![midjourney.png](media-prompt-engineering/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-01-22_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_1.49.10.png)
