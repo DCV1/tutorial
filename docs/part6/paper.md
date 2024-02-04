@@ -1,6 +1,6 @@
 
+![](./Pasted_image_20240204215716.png)
 
-![[Pasted_image_20240204215716.png]]
 NeurIPSW 2024
 # 논문 작성 동기
 
@@ -21,7 +21,7 @@ LLM을 사용한 세밀한 텍스트 프롬프트 생성 돕기 그림 3b에서�
 | w / o  Prompt Engineering | w /  Prompt Engineering |
 | :----: | :----: |
 | 3a | 3b |
-| ![[neurips_finger_2.png]] | ![[neurips_finger_better_2.png]] |
+| ![neurips_finger_2](neurips_finger_2.png) | ![neurips_finger_better_2](neurips_finger_better_2.png) |
 | finger | finger, a slender digit adorned with a delicate silver ring, a close-up shot with a blurred background of blooming roses, capturing the elegance and subtlety of the moment, Photography, Canon EOS 5D Mark IV with a 50mm lens |
 
 ## Show intuitive samples of various art style
