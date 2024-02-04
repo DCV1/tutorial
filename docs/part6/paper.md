@@ -37,9 +37,9 @@ LLM을 사용한 세밀한 텍스트 프롬프트 생성 돕기 그림 3b에서�
 
 | 그림 4 | 그림 4 |
 | :--: | :--: |
-| ![a house, in the style of anime art](./Anime_art.png) | ![a house, in the style of Baroque](./Baroque.png) |
+| ![a house, in the style of anime art](./Anime_Art.jpeg) | ![a house, in the style of Baroque](./Baroque.png) |
 | **a house, in the style of anime art** | **a house, in the style of Baroque** |
-| ![a house, in the style of Celtic Maze](./Celtic_Maze.png) | ![a house, in the style of cubism](./Cubism.png) |
+| ![a house, in the style of Celtic Maze](./Celtic_Maze.png) | ![a house, in the style of cubism](./Cubism.jpeg) |
 | **a house, in the style of Celtic Maze** | **a house, in the style of cubism** |
 
 
