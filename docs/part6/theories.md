@@ -2,6 +2,7 @@
 ![](./Pasted_image_20240204215716.png)
 
 # NeurIPSW 2024
+![GLANCE Generating Limitless Artistic Novel Creative videos Effortlessly](https://drive.google.com/file/d/1mdxnDxBs-M8RNweu-pwALn0pFz84WWkl/view?usp=sharing)
 <br>
 
 ## 논문 작성 동기
