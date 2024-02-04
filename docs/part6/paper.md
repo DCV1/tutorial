@@ -1,6 +1,6 @@
-![a house, in the style of anime art](./Pasted image 20240204215716.png)
 
-![[Pasted image 20240204215716.png]]
+
+![[Pasted_image_20240204215716.png]]
 NeurIPSW 2024
 # 논문 작성 동기
 
