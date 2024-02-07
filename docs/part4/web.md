@@ -23,19 +23,18 @@ github 주소에 들어가서 안내에 따라 각각 설치하시면 됩니다.
 
 1. 영상 만들기 클릭
 
-![Untitled](web/Untitled.png)
+<img src="web/Untitled.png" alt="Untitled" width="80%" align="center">
 
 1. 소스 음악 하단의 ‘선택→’을 클릭.
 
 참고) 재생 버튼을 누르면 음악이 재생됩니다.
-
-![Untitled](web/Untitled%201.png)
+<img src="web/Untitled%201.png" alt="Untitled" width="80%" align="center">
 
 2. 이미지를 선택하고 상단에 ‘이 이미지 선택 →’ 버튼을 누릅니다.
 - 제작하고 싶은 뮤직비디오의 분위기를 정하는 이미지입니다. 영상 전체에 영향을 끼칠 수 있으니 참고바랍니다.
 
-![Untitled](web/Untitled%202.png)
+<img src="web/Untitled%202.png" alt="Untitled" width="80%" align="center">
 
 3.  각 항목별로 옵션을 선택하면, 뮤직 비디오 만들기 버튼이 활성화 됩니다. 해당 버튼을 클릭하면 영상이 제작되기 시작합니다. 
 
-![Untitled](web/unimaker_demo3.png)
+<img src="web/unimaker_demo3.png" alt="Untitled" width="80%" align="center">
