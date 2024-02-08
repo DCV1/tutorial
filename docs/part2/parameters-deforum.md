@@ -28,6 +28,10 @@
 
 ### 예시
 
+| 2D animation mode | 3D animation mode|
+| :----: | :----: |
+| ![2d.gif](media-deforum-parameters/2d.gif) |![3d.gif](media-deforum-parameters/3d.gif) |
+<!--
 ![2d.gif](media-deforum-parameters/2d.gif)
 
 2D animation mode
@@ -35,6 +39,7 @@
 ![3d.gif](media-deforum-parameters/3d.gif)
 
 3D animation mode
+-->
 
 ## Cadence
 
@@ -51,6 +56,11 @@
 
 ### 예시
 
+| cadence = 1 | cadence = 2|
+| :----: | :----: |
+| ![cadence_1(10s).gif](media-deforum-parameters/cadence_1(10s).gif) |![cadence_2(10s).gif](media-deforum-parameters/cadence_2(10s).gif) |
+
+<!--
 ![cadence_1(10s).gif](media-deforum-parameters/cadence_1(10s).gif)
 
 cadence=1
@@ -58,7 +68,7 @@ cadence=1
 ![cadence_2(10s).gif](media-deforum-parameters/cadence_2(10s).gif)
 
 cadence=2
-
+-->
 ### 팁
 
 - Cadence가 3보다 크면 영상의 변화가 지나치게 느려짐(?)
@@ -75,7 +85,12 @@ cadence=2
 - wrap: 이미지 반대쪽에서 픽셀을 끌어옴
 
 ### 예시
+|| replicate| wrap|
+| :----: | :----: |:----: |
+|2D zoom out <br> (zoom=0.9)| ![2d_replicate_0.9.gif](media-deforum-parameters/2d_replicate_0.9.gif) |![2d_wrap_0.9.gif](media-deforum-parameters/2d_wrap_0.9.gif)|
+|3D zoom out <br> (translation Z = -5)| ![3d_replicate_-5.gif](media-deforum-parameters/3d_replicate_-5.gif) |![3d_wrap_-5.gif](media-deforum-parameters/3d_wrap_-5.gif) |
 
+<!--
 ![2d_replicate_0.9.gif](media-deforum-parameters/2d_replicate_0.9.gif)
 
 2D zoom out(0.9) - replicate
@@ -91,7 +106,7 @@ cadence=2
 ![3d_wrap_-5.gif](media-deforum-parameters/3d_wrap_-5.gif)
 
 3D zoom out(-5) - wrap
-
+-->
 ### 팁
 
 - zoom in에서는 차이가 보이지 않고 zoom out시에만 적용된다.
@@ -208,9 +223,13 @@ marble block → colosseum 만 표현됨
 - 1: 이전 프레임을 그대로 사용함
 
 ### 예시
-
+| strength = 0 | strength = 0.5|
+| :----: | :----: |
+| ![bulb_strength_0.gif](media-deforum-parameters/bulb_strength_0.gif) |![bulb_strength_0.5.gif](media-deforum-parameters/bulb_strength_0.5.gif)|
+| strength = 0.7 | strength = 0.9|
+| ![bulb_strength_0.gif](media-deforum-parameters/bulb_strength_0.7.gif) |![bulb_strength_0.5.gif](media-deforum-parameters/bulb_strength_0.9.gif)|
 - Prompt : a light bulb is put on a table near a gray wall, in the style of light cyan and gold, use of screen tones, youthful energy, iso 200, organic material, clean-lined, award-winning
-    
+    <!--
     ![bulb_strength_0.gif](media-deforum-parameters/bulb_strength_0.gif)
     
     strength = 0
@@ -226,8 +245,7 @@ marble block → colosseum 만 표현됨
     ![bulb_strength_0.9.gif](media-deforum-parameters/bulb_strength_0.9.gif)
     
     strength = 0.9
-    
-
+    -->
 ### 팁
 
 - 값이 클 수록 이전 프레임 재활용 비율이 증가하므로 영상 생성이 짧게 걸림
@@ -240,16 +258,16 @@ marble block → colosseum 만 표현됨
     - 음악에 생동감을 부여할 수 있다. 이런 효과는 EDM에서 잘 써먹을 수 있는데, EDM에서 킥 사운드가 두드러지는 음악을 사용할 때 효과가 두드러진다. 예시 keyframes
     - 사용예시
     
-    ```json
+    ```
     {0: 0.7, 299: 0.7, 300: 0.3, 320: 0.3, 321: 0.7}
     ```
     
     - audio reactive에 적절히 활용하면 [작품에 효과적으로 생동감을 부여할 수 있다.](https://www.youtube.com/shorts/a3xuiGNyWYs)
 2. 낮은 값에서 → 높은 값으로: 해당 장면에 집중하는 효과를 줄 수 있다.
 
-![deforum_strength_reverse.gif](media-deforum-parameters/deforum_strength_reverse.gif)
+    ![deforum_strength_reverse.gif](media-deforum-parameters/deforum_strength_reverse.gif)
 
-1. strength와 motion에 함께 효과를 준 경우.
+3. strength와 motion에 함께 효과를 준 경우.
     - strength에 변화를 주면서 동시에 motion(zoom이나 상하좌우로 움직이는 카메라 모션)에도 변화를 주게 된다면, 착시효과처럼 관객이 부자연스러움을 덜 느끼면서 전환효과를 줄 수 있다.
     - 예시: [https://youtu.be/If77St4tbXU?t=24](https://youtu.be/If77St4tbXU?t=24)
 
@@ -263,18 +281,20 @@ marble block → colosseum 만 표현됨
 - CFG가 높을수록 생성된 이미지가 프롬프트를 따라가게 되지만 지나치게 높을 경우 인공물들이 많이 생기게 되므로 7 정도가 가장 자연스러움
 
 ### 예시
-
+| CFG = 7| CFG = 20|
+| :----: | :----: |
+| ![cfg7.gif](media-deforum-parameters/cfg7.gif) |![cfg20.gif](media-deforum-parameters/cfg20.gif)|
 - prompt
     
     <aside>
-    💡 {
+    {
     "0": "an apple",
     "24": "a banana",
     "48": "a coconut",
     "72": "a durian",
     "96": "an apple, a banana, a coconut, a durian"
     }
-    
+    <!--
     </aside>
     
     ![cfg7.gif](media-deforum-parameters/cfg7.gif)
@@ -284,7 +304,7 @@ marble block → colosseum 만 표현됨
     ![cfg20.gif](media-deforum-parameters/cfg20.gif)
     
     CFG=20
-    
+    -->
 
 ### 팁
 
