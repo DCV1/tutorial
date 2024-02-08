@@ -1,4 +1,5 @@
 # Deforum - 주요 Paramemters
+<br>
 
 ## Schedule Keyframing
 
@@ -40,6 +41,7 @@
 
 3D animation mode
 -->
+<br>
 
 ## Cadence
 
@@ -73,6 +75,7 @@ cadence=2
 
 - Cadence가 3보다 크면 영상의 변화가 지나치게 느려짐(?)
 - 클래식과 같이 느린 음악에는 cadence를 높이는게 어울리기도 함
+<br>
 
 ## Border mode
 
@@ -110,6 +113,7 @@ cadence=2
 ### 팁
 
 - zoom in에서는 차이가 보이지 않고 zoom out시에만 적용된다.
+<br>
 
 ## Guided Images
 
@@ -120,84 +124,40 @@ cadence=2
 - 영상의 중간에 인풋 이미지를 주어 해당 이미지에 비슷하게 영상을 생성할 수 있는 기능
 
 ### 예시
-
+<details>
+<summary>Guided images / Prompts</summary>
+    
+| 1. white marble block is on the table| 2. Michelangelo constructs a sculpture|
+| :----: | :----: |
+| !["0": "white marble block is on the table”](media-deforum-parameters/eiei_1i239_a_block_of_marble_in_the_workroom_realistic_1ed31750-ea78-430a-8b30-076ea568abdc.png) | !["30": "Michelangelo constructs a sculpture"](media-deforum-parameters/eiei_1i239_a_block_of_marble_in_the_workroom_realistic_in_miche_c4af6ed9-20e0-4ae4-82c0-9fde24b8bcfb.png)|
+| 3. A white statue is playing the violin| 4. The Colosseum is covered in snow|
+|!["60": "A white statue is playing the violin"](media-deforum-parameters/eiei_1i239_a_man_playing_violin_in_orchestra_Rodin_style_b9c70cb8-9884-48d5-a0c2-8dc5dd84f5ff.png) |!["90": "The Colosseum is covered in snow”](media-deforum-parameters/eiei_1i239_inside_Colosseum_frostbite_3d_in_Ancient_Greek_art_s_ec7b5bce-ea94-4b1d-9b58-c567313585d3.png)| 
+    
+</details>
+    
 1. fps : prompt 입력 시 fps의 범위에 따라 guided image 반영률이 달라짐
+    | fps = 30 | fps = 10 |
+    | :----: | :----: |
+    |![제목 없는 디자인 (1).gif](media-deforum-parameters/guided1.gif) | ![제목 없는 디자인 (2).gif](media-deforum-parameters/guided2.gif)|
+    | marble block → sculpture → statue → colosseum 순으로 모두 나타나있음| marble block → colosseum 만 표현됨|
 
-- fps : 30
-- Guided images / Prompts
-    
-    
-    !["0": "white marble block is on the table”](media-deforum-parameters/eiei_1i239_a_block_of_marble_in_the_workroom_realistic_1ed31750-ea78-430a-8b30-076ea568abdc.png)
-    
-    "0": "white marble block is on the table”
-    
-    !["60": "A white statue is playing the violin"](media-deforum-parameters/eiei_1i239_a_man_playing_violin_in_orchestra_Rodin_style_b9c70cb8-9884-48d5-a0c2-8dc5dd84f5ff.png)
-    
-    "60": "A white statue is playing the violin"
-    
-    !["30": "Michelangelo constructs a sculpture"](media-deforum-parameters/eiei_1i239_a_block_of_marble_in_the_workroom_realistic_in_miche_c4af6ed9-20e0-4ae4-82c0-9fde24b8bcfb.png)
-    
-    "30": "Michelangelo constructs a sculpture"
-    
-    !["90": "The Colosseum is covered in snow”](media-deforum-parameters/eiei_1i239_inside_Colosseum_frostbite_3d_in_Ancient_Greek_art_s_ec7b5bce-ea94-4b1d-9b58-c567313585d3.png)
-    
-    "90": "The Colosseum is covered in snow”
-    
 
-![제목 없는 디자인 (1).gif](media-deforum-parameters/guided1.gif)
+2. Guided image strength : guided image의 strength에 따라 생성된 영상에서 guided image를 유지하는 정도가 달라짐
+    | strength = 0.8 | strength = 0.1 |
+    | :----: | :----: |
+    |![제목 없는 디자인 (3).gif](media-deforum-parameters/guided3.gif) |![제목 없는 디자인 (7).gif](media-deforum-parameters/guided7.gif)|
+    - Global strength / Prompts
+        - Global Strength : 0.5
+        - Prompt: Michelangelo constructs a sculpture
 
-marble block → sculpture → statue → colosseum 순으로 모두 나타나있음
-
-- fps : 10
-- Guided images / Prompts
-    
-    
-    !["0": "white marble block is on the table”](media-deforum-parameters/eiei_1i239_a_block_of_marble_in_the_workroom_realistic_1ed31750-ea78-430a-8b30-076ea568abdc.png)
-    
-    "0": "white marble block is on the table”
-    
-    !["20": "A white statue is playing the violin"](media-deforum-parameters/eiei_1i239_a_man_playing_violin_in_orchestra_Rodin_style_b9c70cb8-9884-48d5-a0c2-8dc5dd84f5ff.png)
-    
-    "20": "A white statue is playing the violin"
-    
-    !["10": "Michelangelo constructs a sculpture"](media-deforum-parameters/eiei_1i239_a_block_of_marble_in_the_workroom_realistic_in_miche_c4af6ed9-20e0-4ae4-82c0-9fde24b8bcfb.png)
-    
-    "10": "Michelangelo constructs a sculpture"
-    
-    !["30": "The Colosseum is covered in snow”](media-deforum-parameters/eiei_1i239_inside_Colosseum_frostbite_3d_in_Ancient_Greek_art_s_ec7b5bce-ea94-4b1d-9b58-c567313585d3.png)
-    
-    "30": "The Colosseum is covered in snow”
-    
-
-![제목 없는 디자인 (2).gif](media-deforum-parameters/guided2.gif)
-
-marble block → colosseum 만 표현됨
-
-1. Guided image strength : guided image의 strength에 따라 생성된 영상에서 guided image를 유지하는 정도가 달라짐
-    - Global strength schedule / Prompts
-        - Strength schedule : 0.5
-        - "0": "Michelangelo constructs a sculpture"
-
-- strength : 0.8
-
-![제목 없는 디자인 (3).gif](media-deforum-parameters/guided3.gif)
-
-- strength : 0.1
-
-![제목 없는 디자인 (7).gif](guided7.gif)
-
-1. Global strength : guided image에서 prompt 반영률이 달라짐
+3. Global strength : guided image에서 prompt 반영률이 달라짐
+   | strength = 0.8 | strength = 0.1 |
+    | :----: | :----: |
+    |![제목 없는 디자인 (3).gif](media-deforum-parameters/guided6.gif) |![제목 없는 디자인 (5).gif](media-deforum-parameters/guided5.gif)|
     - Guided image strength / Prompts
-        - Guided image strength : 0.5
-        - "0": "Michelangelo constructs a sculpture"
+        - Guided image strength: 0.5
+        - Prompt: Michelangelo constructs a sculpture
 
-- strength : 0.8
-
-![제목 없는 디자인 (6).gif](guided6.gif)
-
-- strength : 0.1
-
-![제목 없는 디자인 (5).gif](guided5.gif)
 
 ### 팁
 
@@ -211,6 +171,7 @@ marble block → colosseum 만 표현됨
     - Global strength(= prompt 반영률)이 Guided image strength보다 deforum 영상 생성에 더 영향을 많이 주는 parameter인 것 같음
 - Error: 'images do not match'. Before reporting, please check your schedules/ init values. Full error message is in your terminal/ cli.
     - 원인은 작품의 사이즈가 8의 배수가 아니면 발생한다.
+<br>
 
 ## Strength
 
@@ -256,11 +217,10 @@ marble block → colosseum 만 표현됨
     ![deforum_strength_1.gif](media-deforum-parameters/deforum_strength_1.gif)
     
     - 음악에 생동감을 부여할 수 있다. 이런 효과는 EDM에서 잘 써먹을 수 있는데, EDM에서 킥 사운드가 두드러지는 음악을 사용할 때 효과가 두드러진다. 예시 keyframes
-    - 사용예시
-    
-    ```
-    {0: 0.7, 299: 0.7, 300: 0.3, 320: 0.3, 321: 0.7}
-    ```
+    - 사용예시        
+        ```
+        {0: 0.7, 299: 0.7, 300: 0.3, 320: 0.3, 321: 0.7}
+        ```
     
     - audio reactive에 적절히 활용하면 [작품에 효과적으로 생동감을 부여할 수 있다.](https://www.youtube.com/shorts/a3xuiGNyWYs)
 2. 낮은 값에서 → 높은 값으로: 해당 장면에 집중하는 효과를 줄 수 있다.
@@ -270,6 +230,7 @@ marble block → colosseum 만 표현됨
 3. strength와 motion에 함께 효과를 준 경우.
     - strength에 변화를 주면서 동시에 motion(zoom이나 상하좌우로 움직이는 카메라 모션)에도 변화를 주게 된다면, 착시효과처럼 관객이 부자연스러움을 덜 느끼면서 전환효과를 줄 수 있다.
     - 예시: [https://youtu.be/If77St4tbXU?t=24](https://youtu.be/If77St4tbXU?t=24)
+<br>
 
 ## CFG
 
@@ -286,17 +247,10 @@ marble block → colosseum 만 표현됨
 | ![cfg7.gif](media-deforum-parameters/cfg7.gif) |![cfg20.gif](media-deforum-parameters/cfg20.gif)|
 - prompt
     
-    <aside>
-    {
-    "0": "an apple",
-    "24": "a banana",
-    "48": "a coconut",
-    "72": "a durian",
-    "96": "an apple, a banana, a coconut, a durian"
-    }
+    ```
+    {"0": "an apple", "24": "a banana", "48": "a coconut", "72": "a durian", "96": "an apple, a banana, a coconut, a durian"}
+    ```
     <!--
-    </aside>
-    
     ![cfg7.gif](media-deforum-parameters/cfg7.gif)
     
     CFG=7
@@ -309,12 +263,15 @@ marble block → colosseum 만 표현됨
 ### 팁
 
 - CFG가 낮을수록 프롬프트를 따르지 않기에 CFG가 낮아야 creative results가 생성된다고 생각할 수 있지만 CFG가 높으면 artifacts가 많이 생성되면서 어느 관점에서는 creative한 것처럼 보일 수 있음
+<br>
 
 ## Subseed, Step, Sampler, Checkpoint
 
 ![Untitled](media-deforum-parameters/Untitled%206.png)
 
 - 해당 파라미터들의 Schedule을 지정할 수 있는 부분
+
+<br>
 
 ## Motion
 
@@ -333,6 +290,7 @@ marble block → colosseum 만 표현됨
     
     ![화면 기록 2024-01-23 오후 9.48.39.gif](camera.gif)
     
+<br>
 
 ## Noise
 
@@ -340,18 +298,13 @@ marble block → colosseum 만 표현됨
 
 ### 설명
 
-- Diffusion의 다양성을 ****위해 프레임당 추가할 노이즈의 양을 제어하는 파라미터
+- Diffusion의 다양성을 위해 프레임당 추가할 노이즈의 양을 제어하는 파라미터
 - uniform : 선명한 이미지를 얻고 싶을 때
-    - Noise schedule : 0:(0.065)
+    - Noise schedule : ```0: (0.065)```
     - Enable noise multiplier scheduling : 활성화
 - perlin : 지속성 있는 이미지를 얻고 싶을 때 (선명함은 사라짐)
-    - Noise schedule : 0:(0.065)
+    - Noise schedule : ```0: (0.065)```
     - perlin octaves : 4
     - perlin persistence : 0.5
     - Enable noise multiplier scheduling : 활성화
 
-- strength = 0.8
-
-![제목 없는 디자인 (6).gif](guided6.gif)
-
-- strength = 0.1
