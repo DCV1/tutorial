@@ -304,7 +304,7 @@ marble block → colosseum 만 표현됨
 
 - 영상이 이동 방식(카메라 무브먼트)를 조절할 수 있는 파라미터
 
-[](media-deforum-parameters/motion_png.png)
+![](media-deforum-parameters/motion_png.PNG)
 
 ### 팁
 
