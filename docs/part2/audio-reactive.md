@@ -88,8 +88,8 @@
         - Rotation Y : rotate up / rotate dowm
         - Rotation Z :  rotate clockwise / rotate counterclockwise
 - **3D Translation Z**에 적용
-    
-    ![제목 없는 디자인 (8).gif](media-audio-reactive/space.gif)
+
+  <img src="media-audio-reactive/space.gif" width="50%">
     
 
 ### 수식 사용
@@ -100,16 +100,14 @@
         
         ![음원](media-audio-reactive/Pasted_image_20240123113806.png)
         
-        음원
+        - 음원
         
         ![스펙트럼](media-audio-reactive/Pasted_image_20240123105526.png)
         
-        스펙트럼
+        - 스펙트럼
         
     2. 해당 구간에 거의 일정한 주기로 반복되는 것을 볼 수 있는데, 해당 구간을 집어보면 약 0.26초가 나온다. 
-        - 사진
-            
-            ![Pasted image 20240123210810.png](media-audio-reactive/Pasted_image_20240123210810.png)
+        ![Pasted image 20240123210810.png](media-audio-reactive/Pasted_image_20240123210810.png)
             
     3. 따라서 $\mathrm{cos}(2\pi\mathrm{t}/0.26)$를 Rotation_X나 Rotation_Y 에 집어넣으면 된다.
     4. 그런데, 진폭을 1이상 올리면 아래와 같이 Line이나 frame이 발생하는 현상이 있어서 진폭을 0.5 이하로 줄이되, 주기를 다소 늘리는 편을 추천한다. 
