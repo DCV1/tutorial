@@ -1,5 +1,7 @@
 # Stable Diffusion - 주요 Paramemters
 
+<br>
+
 ## Checkpoint
 
 ![Untitled](media-sd-parameters/Untitled.png)
@@ -10,26 +12,31 @@
 - 적용 방법 : `stable-diffusion-webui/models/Stable-diffusion` 폴더에 원하는 모델의 `.safetensors` 파일을 저장
 
 ### 예시
+<!--
+![ckpt_v15_20240113071553.gif](media-sd-parameters/ckpt_v15_20240113071553.gif)
 
-- Prompt : a man standing on the beach looking at the sea
-    
-    ![ckpt_v15_20240113071553.gif](media-sd-parameters/ckpt_v15_20240113071553.gif)
-    
-    v1-5-pruned-emaonly.safetensors (default)
-    
-    ![ckpt_sdxl_20240113070148.gif](media-sd-parameters/ckpt_sdxl_20240113070148.gif)
-    
-    stable-diffusion-xl-refiner-1.0
-    
-    ![ckpt_dreamshaper_20240113071026.gif](media-sd-parameters/ckpt_dreamshaper_20240113071026.gif)
-    
-    dreamshaper_8.safetensors
-    
+v1-5-pruned-emaonly.safetensors (default)
+
+![ckpt_sdxl_20240113070148.gif](media-sd-parameters/ckpt_sdxl_20240113070148.gif)
+
+stable-diffusion-xl-refiner-1.0
+
+![ckpt_dreamshaper_20240113071026.gif](media-sd-parameters/ckpt_dreamshaper_20240113071026.gif)
+
+dreamshaper_8.safetensors
+-->
+
+| v1-5-pruned-emaonly.safetensors <br> (default) | stable-diffusion-xl-refiner-1.0 | dreamshaper_8.safetensors |
+| :----: | :----: | :----: |
+| <img src="media-sd-parameters/ckpt_v15_20240113071553.gif" width="100%"> | <img src="media-sd-parameters/ckpt_sdxl_20240113070148.gif" width="100%"> | <img src="media-sd-parameters/ckpt_dreamshaper_20240113071026.gif" width="100%"> |
+- **Prompt** : a man standing on the beach looking at the sea
 
 ### 팁
 
 - webui 기본 checkpoint인 `v1-5-pruned-emaonly.safetensors` 로 영상을 생성할 경우 영상 퀄리티가 좋지 않음
 - 전시회 작품은 SDXL, Dreamshaper을 주로 사용함
+
+<br>
 
 ## Sampler
 
@@ -37,28 +44,33 @@
 
 ### 설명
 
-- Diffusion 과정의 ****각 단계에서 새로운 샘플 이미지를 생성할 때 노이즈를 제거하는 방법
+- Diffusion 과정의 각 단계에서 새로운 샘플 이미지를 생성할 때 노이즈를 제거하는 방법
 
-[Complete guide to samplers in Stable Diffusion](https://www.felixsanz.dev/articles/complete-guide-to-samplers-in-stable-diffusion)
+- [Complete guide to samplers in Stable Diffusion](https://www.felixsanz.dev/articles/complete-guide-to-samplers-in-stable-diffusion)
 
-[ArtStation - Stable Diffusion - Samplers](https://www.artstation.com/blogs/kaddoura/pBPo/stable-diffusion-samplers)
+- [ArtStation - Stable Diffusion - Samplers](https://www.artstation.com/blogs/kaddoura/pBPo/stable-diffusion-samplers)
 
 ### 예시
 
-- Prompt : the old japanese street side on an avenue with trees, in the style of concept art, lively tavern scenes, muted palette, bloomcore, cherry blossoms, anime-inspired, religious building
-    
-    ![Euler_a_japanese.gif](media-sd-parameters/Euler_a_japanese.gif)
-    
-    Euler a : 3min 41s
-    
-    ![LMS_japanese_20231028071030.gif](media-sd-parameters/LMS_japanese_20231028071030.gif)
-    
-    LMS : 3min 44s
-    
-    ![DPM__2M_Karras_japanese.gif](media-sd-parameters/DPM__2M_Karras_japanese.gif)
-    
-    DPM++ 2M Karras: 3min 6s
-    
+
+<!--
+![Euler_a_japanese.gif](media-sd-parameters/Euler_a_japanese.gif)
+
+Euler a : 3min 41s
+
+![LMS_japanese_20231028071030.gif](media-sd-parameters/LMS_japanese_20231028071030.gif)
+
+LMS : 3min 44s
+
+![DPM__2M_Karras_japanese.gif](media-sd-parameters/DPM__2M_Karras_japanese.gif)
+
+DPM++ 2M Karras: 3min 6s
+-->
+
+| Euler a | LMS | DPM++ 2M Karras |
+| :----: | :----: | :----: |
+| <img src="media-sd-parameters/Euler_a_japanese.gif" width="100%"> | <img src="media-sd-parameters/LMS_japanese_20231028071030.gif" width="100%"> | <img src="media-sd-parameters/DPM__2M_Karras_japanese.gif" width="100%"> |
+- **Prompt** : the old japanese street side on an avenue with trees, in the style of concept art, lively tavern scenes, muted palette, bloomcore, cherry blossoms, anime-inspired, religious building
 
 ### 팁
 
@@ -67,6 +79,8 @@
     - LMS, DPM++ 2M SDE, DPM++ 2M SDE Heun, PLMS
 - Euler, Euler a가 눈에 보기에 가장 자연스럽고, Kaiber 영상과 가장 유사함
 - 전시회 작품은 Euler a를 사용함
+
+<br>
 
 ## Steps
 
@@ -81,26 +95,31 @@
 
 ### 예시
 
-- Prompt : a light bulb is put on a table near a gray wall, in the style of light cyan and gold, use of screen tones, youthful energy, iso 200, organic material, clean-lined, award-winning
-    
-    ![bulb_step_10.gif](media-sd-parameters/bulb_step_10.gif)
-    
-    step = 10
-    
-    ![bulb_step_20.gif](media-sd-parameters/bulb_step_20.gif)
-    
-    step = 20
-    
-    ![bulb_step_30.gif](media-sd-parameters/bulb_step_30.gif)
-    
-    step = 30
-    
+<!--
+![bulb_step_10.gif](media-sd-parameters/bulb_step_10.gif)
+
+step = 10
+
+![bulb_step_20.gif](media-sd-parameters/bulb_step_20.gif)
+
+step = 20
+
+![bulb_step_30.gif](media-sd-parameters/bulb_step_30.gif)
+
+step = 30
+-->
+| step = 10 | step = 20 | step = 30 |
+| :----: | :----: | :----: |
+| <img src="media-sd-parameters/bulb_step_10.gif" width="100%"> | <img src="media-sd-parameters/bulb_step_20.gif" width="100%"> | <img src="media-sd-parameters/bulb_step_30.gif" width="100%"> |
+- **Prompt** : a light bulb is put on a table near a gray wall, in the style of light cyan and gold, use of screen tones, youthful energy, iso 200, organic material, clean-lined, award-winning
 
 ### 팁
 
 - Sampler의 종류에 따라 필요한 steps 수가 달라짐
 - 평균적으로 25이상이면 이미지 퀄리티가 크게 달라지지 않음
 - 전시회 작품은 주로 25을 사용함
+
+<br>
 
 ## Seed
 
