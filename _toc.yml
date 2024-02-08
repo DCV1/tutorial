@@ -10,7 +10,6 @@ parts:
   chapters:
   - file: docs/part1/intro
   - file: docs/part1/tools
-  - file: docs/part1/reference-web
 - caption: 이미지/영상 생성
   chapters:
   - file: docs/part2/stable-diffusion-deforum-artwork
@@ -32,3 +31,4 @@ parts:
 - caption: 레퍼런스
   chapters:
   - file: docs/part5/theories
+  - file: docs/part1/reference-web
