@@ -48,27 +48,21 @@
     
     1. Linear Function
         
-        $$
-        \red{y=({b-a \over h})x+a}
-        $$
+        ${y=({b-a \over h})x+a}$
         
     2. Convex Function
         
-        $$
-        \red{y={b-a\over \ln(ch+1)}\ln(cx+1)+a}
-        $$
+        $y={b-a\over \ln(ch+1)}\ln(cx+1)+a$
         
     3. Concave Function 
         
-        $$
-        \red{y=(a+c)x-c\exp({\ln ({k_1-b\over c})\over h}x)}
-        $$
+        $y=(a+c)x - c\exp({\ln ({k_1-b \over c}) \over h} x)$
         
     - 예시
         
         ![a=1, b=0.5, h=1](media-audio-reactive/Untitled%205.png)
         
-        a=1, b=0.5, h=1
+        - a=1, b=0.5, h=1
         
 4. 출력된 string을 복사한다.
     
@@ -95,7 +89,7 @@
         - Rotation Z :  rotate clockwise / rotate counterclockwise
 - **3D Translation Z**에 적용
     
-    ![제목 없는 디자인 (8).gif](media-audio-reactive/%25E1%2584%258C%25E1%2585%25A6%25E1%2584%2586%25E1%2585%25A9%25E1%2586%25A8_%25E1%2584%258B%25E1%2585%25A5%25E1%2586%25B9%25E1%2584%2582%25E1%2585%25B3%25E1%2586%25AB_%25E1%2584%2583%25E1%2585%25B5%25E1%2584%258C%25E1%2585%25A1%25E1%2584%258B%25E1%2585%25B5%25E1%2586%25AB_(8).gif)
+    ![제목 없는 디자인 (8).gif](media-audio-reactive/space.gif)
     
 
 ### 수식 사용
