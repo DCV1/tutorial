@@ -76,7 +76,7 @@
 - **지윤**
     - ChatGPT의 *[AIPRM Prompt "Stable Diffusion Prompt Generator"](https://www.aiprm.com/prompts/generative/stable-diffusion/1785519285175848960/)* 에 키워드를 넣고 나온 prompt를 실험해보고 수정함
         <img src="media-prompt-engineering/Untitled%204.png" width="50%">
-        - keyword : mythical flame
+        - **keyword**: mythical flame
         
 - **광수**
     1. chatGPT 사용할 때
@@ -95,40 +95,37 @@
 - **민지**
     - Huggingface에서 다양한 모델들로 테스트 해볼 수 있는 공간이 있다.
     - Style 선택부터 prompt 생성까지 해볼 수 있기 때문에 아이디어 없다면 아래 모델들로부터 먼저 테스트 해보는 것도 좋다.
-        
-        ![[https://huggingface.co/spaces/doevent/Stable-Diffusion-prompt-generator](https://huggingface.co/spaces/doevent/Stable-Diffusion-prompt-generator)](media-prompt-engineering/Untitled%205.png)
+        <img src="media-prompt-engineering/Untitled%205.png" width="80%">
         
         [https://huggingface.co/spaces/doevent/Stable-Diffusion-prompt-generator](https://huggingface.co/spaces/doevent/Stable-Diffusion-prompt-generator)
         
-        ![[https://huggingface.co/spaces/mrbeliever/AI-Image-Prompt-Generator](https://huggingface.co/spaces/mrbeliever/AI-Image-Prompt-Generator)](media-prompt-engineering/Untitled%206.png)
+        <img src="media-prompt-engineering/Untitled%206.png" width="80%">
         
         [https://huggingface.co/spaces/mrbeliever/AI-Image-Prompt-Generator](https://huggingface.co/spaces/mrbeliever/AI-Image-Prompt-Generator)
         
     - 혹은 이미지를 생성한 다음 midjourney나 inpainting에서 다시 재처리하여 사용하는 방법도 있다.
         
-        ![[https://huggingface.co/spaces/CoolSnow/stable-diffusion-models](https://huggingface.co/spaces/CoolSnow/stable-diffusion-models)](media-prompt-engineering/Untitled%207.png)
+        <img src="media-prompt-engineering/Untitled%207.png" width="80%">
         
         [https://huggingface.co/spaces/CoolSnow/stable-diffusion-models](https://huggingface.co/spaces/CoolSnow/stable-diffusion-models)
         
 - **지현**
     - promptoMANIA에서 원하는 스타일의 프롬프트를 찾은 후 테스트해본 후 최적화
         
-        ![Untitled](media-prompt-engineering/Untitled%208.png)
+       <img src="media-prompt-engineering/Untitled%208.png" width="80%">
         
         [promptoMANIA: AI art community with prompt generator](https://promptomania.com/)
         
     - 노래의 가사를 참고하여 프롬프트로 사용
     - Playground의 SD1.5, SDXL 모델과 다양한 checkpoint를 빠르게 테스트하여 canvas에 프레임마다 원하는 화풍을 이미지를 리스트업, 마음에 드는 화풍의 프롬프트만 참고하여 사용
         
-        ![Untitled](media-prompt-engineering/Untitled%209.png)
+        <img src="media-prompt-engineering/Untitled%209.png" width="80%">
         
         [Free AI image generator: Art, Social Media, Marketing | Playground](https://playgroundai.com/)
         
 - **해린**
     - chat GPT deforum generator template을 활용함
-        
-        [](https://github.com/hashmil/stablediffusion-midjourney-prompts/blob/main/deforum-story-prompt-gen.txt)
-        
+      - https://github.com/hashmil/stablediffusion-midjourney-prompts/blob/main/deforum-story-prompt-gen.txt
     - 주제를 구상한 뒤 GPT에게 제시하고 답변으로 받은 prompt를 수정한다.
     - GPT가 생성한 prompt에서 너무 추상적은 단어나 표현은 삭제하고 직관적인 표현들만 남긴다.
     - 원하는 style은 강조하거나 prompt의 앞쪽에 배치하고 prompt를 작성할 때는 문장 보다는 단어의 배열을 배치하는 형식으로 수정하였다.
