@@ -1,7 +1,11 @@
 # Prompt Engineering
 
+<details>
+<summary><b>Web UI Screenshot</b></summary>
+    
+![Untitled](media-deforum-parameters/Untitled.png)
+</details>
 
-![Untitled](media-prompt-engineering/Untitled.png)
 
 ## General Tips
 
