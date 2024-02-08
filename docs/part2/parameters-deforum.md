@@ -13,8 +13,12 @@
 - ex) `0:(0), 4:(0), 5:(5)` → `0:(0), 1:(0), 2:(0), 3:(0), 4:(0), 5:(5)`
 
 ## Animation Mode
-
+<details>
+<summary><b>Web UI Screenshot</b></summary>
+    
 ![Untitled](media-deforum-parameters/Untitled.png)
+</details>
+
 
 ### 설명
 
@@ -44,8 +48,12 @@
 <br>
 
 ## Cadence
-
+<details>
+<summary><b>Web UI Screenshot</b></summary>
+    
 ![Untitled](media-deforum-parameters/Untitled%201.png)
+</details>
+
 
 ### 설명
 
@@ -78,8 +86,11 @@ cadence=2
 <br>
 
 ## Border mode
-
+<details>
+<summary><b>Web UI Screenshot</b></summary>
+    
 ![Untitled](media-deforum-parameters/Untitled%202.png)
+</details>
 
 ### 설명
 
@@ -116,8 +127,12 @@ cadence=2
 <br>
 
 ## Guided Images
-
+<details>
+<summary><b>Web UI Screenshot</b></summary>
+    
 ![Untitled](media-deforum-parameters/Untitled%203.png)
+</details>
+
 
 ### 설명
 
@@ -174,8 +189,12 @@ cadence=2
 <br>
 
 ## Strength
-
+<details>
+<summary><b>Web UI Screenshot</b></summary>
+    
 ![Untitled](media-deforum-parameters/Untitled%204.png)
+</details>
+
 
 ### 설명
 
@@ -233,8 +252,12 @@ cadence=2
 <br>
 
 ## CFG
-
+<details>
+<summary><b>Web UI Screenshot</b></summary>
+    
 ![Untitled](media-deforum-parameters/Untitled%205.png)
+</details>
+
 
 ### 설명
 
@@ -266,16 +289,24 @@ cadence=2
 <br>
 
 ## Subseed, Step, Sampler, Checkpoint
-
+<details>
+<summary><b>Web UI Screenshot</b></summary>
+    
 ![Untitled](media-deforum-parameters/Untitled%206.png)
+</details>
+
 
 - 해당 파라미터들의 Schedule을 지정할 수 있는 부분
 
 <br>
 
 ## Motion
-
+<details>
+<summary><b>Web UI Screenshot</b></summary>
+    
 ![Untitled](media-deforum-parameters/Untitled%207.png)
+</details>
+
 
 ### 설명
 
@@ -293,8 +324,12 @@ cadence=2
 <br>
 
 ## Noise
-
+<details>
+<summary><b>Web UI Screenshot</b></summary>
+    
 ![Untitled](media-deforum-parameters/Untitled%208.png)
+</details>
+
 
 ### 설명
 
