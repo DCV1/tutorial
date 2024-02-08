@@ -2,7 +2,7 @@
 
 > AI로 만든 이런 영상을 보신 적 있으신가요?
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/D262oTSRQXw?si=pyfSjF8kA83YDg3S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/D262oTSRQXw/0.jpg)](https://www.youtube.com/watch?v=D262oTSRQXw)
 
 [Kaiber.ai](https://kaiber.ai/)와 유명 밴드 Linkin Park이 합작하여 만든 Massive라는 곡의 뮤직비디오입니다. 뮤지션들을 음악을 작곡하고 마스터링하며 많은 노력을 쏟습니다. 하지만, 음악만으로 사람들의 시선을 사로잡기 어렵고 막대한 비용과 시간이 투자되어야합니다. 음악 산업 관계자들과의 인터뷰를 통해 뮤직비디오를 기획, 제작하는데 어려움이 있다는 것을 발견했고, 이를 개선하기 위한 방법의 하나로써 생성형 AI 뮤직비디오 제작에 관심을 갖게 되었습니다. 
 
