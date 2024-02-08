@@ -3,8 +3,12 @@
 <br>
 
 ## Checkpoint
+<details>
+<summary><b>Web UI Screenshot</b></summary>
+    
+![Untitled](media-deforum-parameters/Untitled.png)
+</details>
 
-![Untitled](media-sd-parameters/Untitled.png)
 
 ### 설명
 
@@ -39,8 +43,11 @@ dreamshaper_8.safetensors
 <br>
 
 ## Sampler
-
-![Untitled](media-sd-parameters/Untitled%201.png)
+<details>
+<summary><b>Web UI Screenshot</b></summary>
+    
+![Untitled](media-deforum-parameters/Untitled%201.png)
+</details>
 
 ### 설명
 
@@ -83,8 +90,12 @@ DPM++ 2M Karras: 3min 6s
 <br>
 
 ## Steps
+<details>
+<summary><b>Web UI Screenshot</b></summary>
+    
+![Untitled](media-deforum-parameters/Untitled%202.png)
+</details>
 
-![Untitled](media-sd-parameters/Untitled%202.png)
 
 ### 설명
 
@@ -122,8 +133,12 @@ step = 30
 <br>
 
 ## Seed
+<details>
+<summary><b>Web UI Screenshot</b></summary>
+    
+![Untitled](media-deforum-parameters/Untitled%203.png)
+</details>
 
-![Untitled](media-sd-parameters/Untitled%203.png)
 
 ### 설명
 
