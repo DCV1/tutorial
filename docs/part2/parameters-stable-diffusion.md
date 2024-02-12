@@ -1,12 +1,11 @@
-# Stable Diffusion - 주요 Paramemters
-
+# Stable Diffusion 세팅
 <br>
 
 ## Checkpoint
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled.png)
+![Untitled](media-sd-parameters/Untitled.png)
 </details>
 
 
@@ -46,7 +45,7 @@ dreamshaper_8.safetensors
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled%201.png)
+![Untitled](media-sd-parameters/Untitled%201.png)
 </details>
 
 ### 설명
@@ -93,7 +92,7 @@ DPM++ 2M Karras: 3min 6s
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled%202.png)
+![Untitled](media-sd-parameters/Untitled%202.png)
 </details>
 
 
@@ -136,7 +135,7 @@ step = 30
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled%203.png)
+![Untitled](media-sd-parameters/Untitled%203.png)
 </details>
 
 
