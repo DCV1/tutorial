@@ -53,18 +53,18 @@ dreamshaper_8.safetensors
 
 - 기존 pre-trained weight는 고정하고, 몇 개의 dense layer만 rank decomposition matrices를 최적화하는 방식으로 학습시키는 모델
 - 사용자 개인의 경험을 반영하여 **concept을 유지**한 채 이미지를 생성할 수 있음
-    - <img src="media-sd-parameters/lora1.png" width="80%"> 
+  <img src="media-sd-parameters/lora1.png" width="80%"> 
 - 적용 방법 :
     - `stable-diffusion-webui/models/Lora` 폴더에 원하는 모델의 `.safetensors` 파일을 저장
     - Prompts를 적을 때 ` <lora:filename:multiplier>` 형식으로 입력하고 trigger words가 있는 경우 함께 입력함
-    - 예시 : `{"0": " a peaceful town, <lora:zebra_dress:1>, trigger_word "}`
+    - 예시 : `{"0": " a peaceful town, <lora:detail_tweaker:1>, trigger_word "}`
 
 ### 예시
 
-| default | zebra dress LoRA|
-| :----: | :----:
-| <img src="media-sd-parameters/ckpt_v15_20240113071553.gif" width="100%"> | <img src="media-sd-parameters/ckpt_sdxl_20240113070148.gif" width="100%"> |
-- **Prompt** : a man standing on the beach looking at the sea
+| default | detail tweaker LoRA|
+| :----: | :----:|
+| <img src="media-sd-parameters/hands_base.gif" width="50%"> | <img src="media-sd-parameters/hands_tweaker.gif" width="50%"> |
+- **Prompt** : a woman shaking her two hands, octane render, highly detailed
 
 ### 팁
 
@@ -83,18 +83,18 @@ dreamshaper_8.safetensors
 ### 설명
 
 - 모델의 cross-attention 레이어 중간에 들어감으로써 작은 네트워크의 weight로 큰 네트워크의 weight 조절을 이끌어내는 fine-tuning 기법
-  - <img src="media-sd-parameters/hypernetwork.png" width="80%"> 
 - checkpoint 학습에 비해 파일 크기가 작고 훈련 속도가 빠르지만 LoRA 보다는 효과가 떨어짐
+  <img src="media-sd-parameters/hypernetwork.png" width="80%"> 
 - 적용 방법 :
     - `stable-diffusion-webui/models/hypernetworks` 폴더에 원하는 모델의 `.pt` 파일을 저장
     - Prompts를 적을 때 ` <hypernet:filename:multiplier>` 형식으로 입력함
     - 예시 : `{"0": "a portrait of woman with blond hair, <hyperenet:mjv4_hypernet:1>"}`
 ### 예시
 
-| default | zebra dress LoRA|
+| default | MJV4 hypernetwork|
 | :----: | :----:|
-| <img src="media-sd-parameters/ckpt_v15_20240113071553.gif" width="100%"> | <img src="media-sd-parameters/ckpt_sdxl_20240113070148.gif" width="100%"> |
-- **Prompt** : a man standing on the beach looking at the sea
+| <img src="media-sd-parameters/woman_base.gif" width="50%"> | <img src="media-sd-parameters/woman_mjv4.gif" width="50%"> |
+- **Prompt** :  a woman with blond hair, octane render, highly detailed
 
 <br>
 
@@ -109,13 +109,20 @@ dreamshaper_8.safetensors
 ### 설명
 
 - 텍스트 인코더(text encoder)에 새로운 임베딩(단어)을 생성하여 개인 사물이나 예술적 스타일과 같은 특정 개념을 생성하는 방법
-  - <img src="media-sd-parameters/textual_inversion.png" width="80%"> 
 - 모델을 직접 조정하는 것이 아니므로, LoRA나 Hypernetwork보다는 효과가 작음
+    <img src="media-sd-parameters/textual_inversion.png" width="80%"> 
 - 적용 방법 :
     - `stable-diffusion-webui/embeddings` 폴더에 원하는 모델의 `.pt` 파일을 저장
     - Prompts에 학습에 사용한 단어를 입력함
     - Negatvie prompt의 경우 Prompts negative에 `(filename:multiplier)` 형식으로 입력함
     - 예시 : `(easynegative:0.75)`
+ 
+### 예시
+
+| default | easynegative embedding|
+| :----: | :----:|
+| <img src="media-sd-parameters/hands_base.gif" width="50%"> | <img src="media-sd-parameters/hands_easynegative.gif" width="50%"> |
+- **Prompt** : a woman shaking her two hands, octane render, highly detailed
 
 
 <br>
