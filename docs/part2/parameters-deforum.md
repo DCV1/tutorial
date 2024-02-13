@@ -1,4 +1,4 @@
-# Deforum - 주요 Paramemters
+# Deforum 세팅
 <br>
 
 ## Schedule Keyframing
