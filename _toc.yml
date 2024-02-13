@@ -19,7 +19,6 @@ parts:
   - file: docs/part2/audio-reactive
 - caption: 모델 서빙
   chapters:
-  - file: docs/part4/wireframe
   - file: docs/part4/web
 - caption: 레퍼런스
   chapters:
