@@ -1,1 +1,0 @@
-# 주요 Paramemters
