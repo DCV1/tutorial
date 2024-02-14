@@ -63,7 +63,7 @@ dreamshaper_8.safetensors
 
 | default | Pixel Art XL LoRA|
 | :----: | :----:|
-| <img src="https://github.com/DCV1/tutorial/assets/79503414/d1e33404-a296-486f-98f3-0a829dc40f08.gif" width="50%"> | <img src="https://github.com/DCV1/tutorial/assets/79503414/f5e17c49-e08d-4da2-903b-113e612cc19c.gif" width="50%"> |
+| <img src="https://github.com/DCV1/tutorial/assets/79503414/d1e33404-a296-486f-98f3-0a829dc40f08.gif" width="50%"> | <img src="https://github.com/DCV1/tutorial/assets/79503414/dad7161a-95a3-499b-b6af-b175564a5c8a.gif" width="50%"> |
 - **Prompt** : snow is falling in magical candy land, pixel art
 
 ### 팁
