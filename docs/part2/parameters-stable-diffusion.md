@@ -69,6 +69,8 @@ dreamshaper_8.safetensors
 ### 팁
 
 - Stable diffusion 모델은 기존에 학습된 이미지를 사용하여 그림을 그리므로 custom 이미지(ex- 우리집 강아지의 이미지)를 반영하지 못하지만 LoRA를 사용하면 custom 이미지를 받아 학습시킬 수 있어, concept customization된 그림을 그릴 수 있음
+- Concept이 잘 유지되므로, 특정 그림체(ex. pixel art)를 생성하고 싶을 경우 trigger word(ex. (pixel:0.8))를 이용해 특정 그림체가 반영된 그림을 그릴 수 있음
+    - (pixel:0.8) 와 같이 특정 그림체의 반영 정도를 정할 수 있음     
 
 <br>
 
