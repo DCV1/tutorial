@@ -63,7 +63,7 @@ dreamshaper_8.safetensors
 
 | default | PixelArtRedmond LoRA|
 | :----: | :----:|
-| <img src="https://github.com/DCV1/tutorial/assets/79503414/d1e33404-a296-486f-98f3-0a829dc40f08.gif" width="100%"> | <img src="https://github.com/DCV1/tutorial/assets/79503414/dad7161a-95a3-499b-b6af-b175564a5c8a.gif" width="100%"> |
+| <img src="media-sd-parameters/woman_base.gif" width="200px"> | <img src="media-sd-parameters/woman_mjv4.gif" width="200px">  |
 - **Prompt** : snow is falling in magical candy land, pixel art
 
 ### 팁
