@@ -40,6 +40,16 @@
         "doc",
         "code"
       ]
+    },
+    {
+      "login": "mksoo",
+      "name": "문광수",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47511185?v=4",
+      "profile": "https://mksoo.notion.site/25cf2913e10846f2872ae866beac1e3c",
+      "contributions": [
+        "doc",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
