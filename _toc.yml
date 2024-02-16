@@ -14,8 +14,8 @@ parts:
   chapters:
   - file: docs/part2/getting-started
   - file: docs/part2/prompt-engineering
-  - file: docs/part2/parameters-deforum
   - file: docs/part2/parameters-stable-diffusion
+  - file: docs/part2/parameters-deforum
   - file: docs/part2/audio-reactive
 - caption: 모델 서빙
   chapters:
