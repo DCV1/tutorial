@@ -1,0 +1,26 @@
+{
+  "projectName": "tutorial",
+  "projectOwner": "Hyunwook Jo",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "milhaud1201",
+      "name": "Jihyeon Park",
+      "avatar_url": "https://avatars.githubusercontent.com/u/108461149?v=4",
+      "profile": "https://github.com/milhaud1201",
+      "contributions": [
+        "doc",
+        "test"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "linkToUsage": false
+}
