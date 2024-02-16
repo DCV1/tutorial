@@ -30,6 +30,16 @@
         "doc",
         "design"
       ]
+    },
+    {
+      "login": "ugiugi0823",
+      "name": "Hyunwook Jo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/106899647?v=4",
+      "profile": "https://bit.ly/jhw_resume",
+      "contributions": [
+        "doc",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
