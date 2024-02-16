@@ -1,6 +1,6 @@
 # GenAI 전시 소개
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
@@ -53,6 +53,7 @@ AI 영상 생성에 있어서 유명한 몇 가지 툴을 사용했지만 불편
       <td align="center" valign="top" width="14.28%"><a href="https://mksoo.notion.site/25cf2913e10846f2872ae866beac1e3c"><img src="https://avatars.githubusercontent.com/u/47511185?v=4?s=100" width="100px;" alt="문광수"/><br /><sub><b>문광수</b></sub></a><br /><a href="https://github.com/Hyunwook Jo/tutorial/commits?author=mksoo" title="Documentation">📖</a> <a href="https://github.com/Hyunwook Jo/tutorial/commits?author=mksoo" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/byunnn"><img src="https://avatars.githubusercontent.com/u/65805298?v=4?s=100" width="100px;" alt="byunnn"/><br /><sub><b>byunnn</b></sub></a><br /><a href="https://github.com/Hyunwook Jo/tutorial/commits?author=byunnn" title="Documentation">📖</a> <a href="#video-byunnn" title="Videos">📹</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/sunmin-lee99"><img src="https://avatars.githubusercontent.com/u/79503414?v=4?s=100" width="100px;" alt="Sunmin Lee"/><br /><sub><b>Sunmin Lee</b></sub></a><br /><a href="https://github.com/Hyunwook Jo/tutorial/commits?author=sunmin-lee99" title="Documentation">📖</a> <a href="#video-sunmin-lee99" title="Videos">📹</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/arislid"><img src="https://avatars.githubusercontent.com/u/46767966?v=4?s=100" width="100px;" alt="Minji Park"/><br /><sub><b>Minji Park</b></sub></a><br /><a href="https://github.com/Hyunwook Jo/tutorial/commits?author=arislid" title="Documentation">📖</a> <a href="#audio-arislid" title="Audio">🔊</a></td>
     </tr>
   </tbody>
 </table>

@@ -70,6 +70,16 @@
         "doc",
         "video"
       ]
+    },
+    {
+      "login": "arislid",
+      "name": "Minji Park",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46767966?v=4",
+      "profile": "https://github.com/arislid",
+      "contributions": [
+        "doc",
+        "audio"
+      ]
     }
   ],
   "contributorsPerLine": 7,
