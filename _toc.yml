@@ -22,5 +22,5 @@ parts:
   - file: docs/part4/web
 - caption: 레퍼런스
   chapters:
-  - file: docs/part5/theories
+  - file: docs/part5/thesis
   - file: docs/part1/reference-web
