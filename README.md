@@ -1,6 +1,6 @@
 # GenAI 전시 소개
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
@@ -48,6 +48,7 @@ AI 영상 생성에 있어서 유명한 몇 가지 툴을 사용했지만 불편
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/milhaud1201"><img src="https://avatars.githubusercontent.com/u/108461149?v=4?s=100" width="100px;" alt="Jihyeon Park"/><br /><sub><b>Jihyeon Park</b></sub></a><br /><a href="https://github.com/Hyunwook Jo/tutorial/commits?author=milhaud1201" title="Documentation">📖</a> <a href="https://github.com/Hyunwook Jo/tutorial/commits?author=milhaud1201" title="Code">💻</a> <a href="https://github.com/Hyunwook Jo/tutorial/commits?author=milhaud1201" title="Tests">⚠️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/jiyoon9704"><img src="https://avatars.githubusercontent.com/u/102934198?v=4?s=100" width="100px;" alt="jiyoon9704"/><br /><sub><b>jiyoon9704</b></sub></a><br /><a href="https://github.com/Hyunwook Jo/tutorial/commits?author=jiyoon9704" title="Documentation">📖</a> <a href="#design-jiyoon9704" title="Design">🎨</a></td>
     </tr>
   </tbody>
 </table>

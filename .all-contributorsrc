@@ -20,6 +20,16 @@
         "code",
         "test"
       ]
+    },
+    {
+      "login": "jiyoon9704",
+      "name": "jiyoon9704",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102934198?v=4",
+      "profile": "https://github.com/jiyoon9704",
+      "contributions": [
+        "doc",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
