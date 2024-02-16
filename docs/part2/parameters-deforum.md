@@ -16,7 +16,7 @@
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled.png)
+![Untitled](media-deforum-parameters/0.png)
 </details>
 
 
@@ -51,7 +51,7 @@
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled%201.png)
+![Untitled](media-deforum-parameters/1.png)
 </details>
 
 
@@ -89,7 +89,7 @@ cadence=2
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled%202.png)
+![Untitled](media-deforum-parameters/2.png)
 </details>
 
 ### 설명
@@ -130,7 +130,7 @@ cadence=2
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled%203.png)
+![Untitled](media-deforum-parameters/3.png)
 </details>
 
 
@@ -192,7 +192,7 @@ cadence=2
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled%204.png)
+![Untitled](media-deforum-parameters/4.png)
 </details>
 
 
@@ -255,7 +255,7 @@ cadence=2
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled%205.png)
+![Untitled](media-deforum-parameters/5.png)
 </details>
 
 
@@ -292,7 +292,7 @@ cadence=2
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled%206.png)
+![Untitled](media-deforum-parameters/6.png)
 </details>
 
 
@@ -304,7 +304,7 @@ cadence=2
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled%207.png)
+![Untitled](media-deforum-parameters/7.png)
 </details>
 
 
@@ -319,7 +319,7 @@ cadence=2
 - sin, exp와 같은 수식도 사용 가능함
 - 카메라 무빙과 회전을 함께 주게 되면, 입체감있게 도는 효과를 줄 수 있다.
     
-    ![화면 기록 2024-01-23 오후 9.48.39.gif](camera.gif)
+    ![화면 기록 2024-01-23 오후 9.48.39.gif](media-deforum-parameters/camera.gif)
     
 <br>
 
@@ -327,7 +327,7 @@ cadence=2
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled%208.png)
+![Untitled](media-deforum-parameters/8.png)
 </details>
 
 

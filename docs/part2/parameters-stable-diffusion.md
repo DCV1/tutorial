@@ -29,9 +29,9 @@ stable-diffusion-xl-refiner-1.0
 dreamshaper_8.safetensors
 -->
 
-| v1-5-pruned-emaonly.safetensors <br> (default) | stable-diffusion-xl-refiner-1.0 | dreamshaper_8.safetensors |
+| v1-5-pruned-emaonly <br> (default) | stable-diffusion-xl-refiner-1.0 | dreamshaper_8 |
 | :----: | :----: | :----: |
-| ![ckpt_v15_20240113071553.gif](media-sd-parameters/ckpt_v15_20240113071553.gif)| ![ckpt_sdxl_20240113070148.gif](media-sd-parameters/ckpt_sdxl_20240113070148.gif)| ![ckpt_dreamshaper_20240113071026.gif](media-sd-parameters/ckpt_dreamshaper_20240113071026.gif) |
+| <img src="media-sd-parameters/ckpt_v15_20240113071553.gif" width="200px">| <img src="media-sd-parameters/ckpt_sdxl_20240113070148.gif" width="200px"> | <img src="media-sd-parameters/ckpt_dreamshaper_20240113071026.gif" width="200px"> |
 - **Prompt** : a man standing on the beach looking at the sea
 
 ### 팁
@@ -63,7 +63,7 @@ dreamshaper_8.safetensors
 
 | default | PixelArtRedmond LoRA|
 | :----: | :----:|
-| ![candy.gif](media-sd-parameters/candy.gif)  | ![candy_lora.gif](media-sd-parameters/candy_lora.gif) |
+| <img src="https://github.com/DCV1/tutorial/assets/79503414/d1e33404-a296-486f-98f3-0a829dc40f08.gif" width="100%"> | <img src="https://github.com/DCV1/tutorial/assets/79503414/dad7161a-95a3-499b-b6af-b175564a5c8a.gif" width="100%"> |
 - **Prompt** : snow is falling in magical candy land, pixel art
 
 ### 팁
@@ -98,7 +98,7 @@ dreamshaper_8.safetensors
 
 | default | MJV4 hypernetwork|
 | :----: | :----:|
-| <img src="media-sd-parameters/woman_base.gif" width="50%"> | <img src="media-sd-parameters/woman_mjv4.gif" width="50%"> |
+| <img src="media-sd-parameters/woman_base.gif" width="300px"> | <img src="media-sd-parameters/woman_mjv4.gif" width="300px"> |
 - **Prompt** :  a woman with blond hair, octane render, highly detailed
 
 <br>
@@ -126,7 +126,7 @@ dreamshaper_8.safetensors
 
 | default | easynegative embedding|
 | :----: | :----:|
-| <img src="media-sd-parameters/hands_base.gif" width="50%"> | <img src="media-sd-parameters/hands_easynegative.gif" width="50%"> |
+| <img src="media-sd-parameters/hands_base.gif" width="300px"> | <img src="media-sd-parameters/hands_easynegative.gif" width="300px"> |
 - **Prompt** : a woman shaking her two hands, octane render, highly detailed
 
 
@@ -137,7 +137,7 @@ dreamshaper_8.safetensors
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-sd-parameters/Untitled%201.png)
+![Untitled](media-sd-parameters/1.png)
 </details>
 
 ### 설명
@@ -167,7 +167,7 @@ DPM++ 2M Karras: 3min 6s
 
 | Euler a | LMS | DPM++ 2M Karras |
 | :----: | :----: | :----: |
-| <img src="media-sd-parameters/Euler_a_japanese.gif" width="100%"> | <img src="media-sd-parameters/LMS_japanese_20231028071030.gif" width="100%"> | <img src="media-sd-parameters/DPM__2M_Karras_japanese.gif" width="100%"> |
+| <img src="media-sd-parameters/Euler_a_japanese.gif" width="180px"> | <img src="media-sd-parameters/LMS_japanese_20231028071030.gif" width="180px"> | <img src="media-sd-parameters/DPM__2M_Karras_japanese.gif" width="180px"> |
 - **Prompt** : the old japanese street side on an avenue with trees, in the style of concept art, lively tavern scenes, muted palette, bloomcore, cherry blossoms, anime-inspired, religious building
 
 ### 팁
@@ -184,7 +184,7 @@ DPM++ 2M Karras: 3min 6s
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-sd-parameters/Untitled%202.png)
+![Untitled](media-sd-parameters/2.png)
 </details>
 
 
@@ -227,7 +227,7 @@ step = 30
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-sd-parameters/Untitled%203.png)
+![Untitled](media-sd-parameters/3.png)
 </details>
 
 
