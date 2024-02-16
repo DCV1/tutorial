@@ -63,7 +63,7 @@ dreamshaper_8.safetensors
 
 | default | PixelArtRedmond LoRA|
 | :----: | :----:|
-| <img src="media-sd-parameters/candy.gif" width="200px"> | <img src="media-sd-parameters/candy_lora.gif" width="200px">  |
+| <img src="media-sd-parameters/candy.gif" width="300px"> | <img src="media-sd-parameters/candy_lora.gif" width="300px">  |
 - **Prompt** : snow is falling in magical candy land, pixel art
 
 ### 팁
