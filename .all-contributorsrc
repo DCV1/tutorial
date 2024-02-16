@@ -16,7 +16,9 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/108461149?v=4",
       "profile": "https://github.com/milhaud1201",
       "contributions": [
-        "doc"
+        "doc",
+        "code",
+        "test"
       ]
     }
   ],
