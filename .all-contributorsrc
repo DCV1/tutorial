@@ -59,6 +59,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "sunmin-lee99",
+      "name": "Sunmin Lee",
+      "avatar_url": "https://avatars.githubusercontent.com/u/79503414?v=4",
+      "profile": "https://github.com/sunmin-lee99",
+      "contributions": [
+        "doc",
+        "video"
+      ]
     }
   ],
   "contributorsPerLine": 7,
