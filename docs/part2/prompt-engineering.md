@@ -3,7 +3,7 @@
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled.png)
+![Untitled](media-deforum-parameters/0.png)
 </details>
 
 
@@ -33,14 +33,14 @@
     - **Rule of Thirds** : 조화롭고 균형있는 배치
     - **Symmetrical** : 좌우 대칭
 4. Layout 관련 Prompt
-    - in the style of **grid composition**: 이미지가 격자 모양으로 배치되지만 이미지 배경에 격자무늬가 생김
-        <img src="media-prompt-engineering/Untitled%201.png" width="50%">
+    - in the style of **grid composition**: 이미지가 격자 모양으로 배치되지만 이미지 배경에 격자무늬가 생김  
+        <img src="media-prompt-engineering/1.png" width="50%">
         
-    - in the style of **tile composition**: 이미지 배경의 격자무늬는 사라지지만 이미지 배치가 격자가 아닌 자유로운 배치로 배치됨
-        <img src="media-prompt-engineering/Untitled%202.png" width="50%">
+    - in the style of **tile composition**: 이미지 배경의 격자무늬는 사라지지만 이미지 배치가 격자가 아닌 자유로운 배치로 배치됨  
+        <img src="media-prompt-engineering/2.png" width="50%">  
         
-    - in the style of **grid layout**: 이미지가 격자 모양으로 배치되고, 격자무늬도 완화됨
-        <img src="media-prompt-engineering/Untitled%203.png" width="50%">
+    - in the style of **grid layout**: 이미지가 격자 모양으로 배치되고, 격자무늬도 완화됨  
+        <img src="media-prompt-engineering/3.png" width="50%">
         
 5. 주로 예술작품을 prompt에 작성하게 되면 액자 프레임이 생성되는 경향이 있음
     - 특히 zoom out 하게 되면 테두리에 줄이 생기는 현상이 좀 더 빈번하게 생기는 듯함
@@ -78,8 +78,8 @@
     - 생성형 모델에서 프롬프트는 장황한 설명보다는 문법구조를 갖춘 형태가 LLM과 대화하기 더 수월함
     - ex) 미드저니에서도 프롬프트를 추천할 때 in the style of 전후를 기준으로, 객체와 스타일을 나눔
 - **지윤**
-    - ChatGPT의 *[AIPRM Prompt "Stable Diffusion Prompt Generator"](https://www.aiprm.com/prompts/generative/stable-diffusion/1785519285175848960/)* 에 키워드를 넣고 나온 prompt를 실험해보고 수정함
-        <img src="media-prompt-engineering/Untitled%204.png" width="50%">
+    - ChatGPT의 *[AIPRM Prompt "Stable Diffusion Prompt Generator"](https://www.aiprm.com/prompts/generative/stable-diffusion/1785519285175848960/)* 에 키워드를 넣고 나온 prompt를 실험해보고 수정함  
+        <img src="media-prompt-engineering/4.png" width="50%">
         - **keyword**: mythical flame
         
 - **광수**
@@ -98,32 +98,32 @@
         - [예시](https://www.youtube.com/watch?v=l8xCenInPY0)로 시작 이미지가 사람 이미지 이지만, 대신에 간단하게 생긴 물체인 풍선을 자주 등장시키고, zoom-out으로 부자연스러운 장면을 최소화시킨 작품을 만들었다.
 - **민지**
     - Huggingface에서 다양한 모델들로 테스트 해볼 수 있는 공간이 있다.
-    - Style 선택부터 prompt 생성까지 해볼 수 있기 때문에 아이디어 없다면 아래 모델들로부터 먼저 테스트 해보는 것도 좋다.
-        <img src="media-prompt-engineering/Untitled%205.png" width="80%">
+    - Style 선택부터 prompt 생성까지 해볼 수 있기 때문에 아이디어 없다면 아래 모델들로부터 먼저 테스트 해보는 것도 좋다.  
+        <img src="media-prompt-engineering/5.png" width="80%">
         
         [https://huggingface.co/spaces/doevent/Stable-Diffusion-prompt-generator](https://huggingface.co/spaces/doevent/Stable-Diffusion-prompt-generator)
         
-        <img src="media-prompt-engineering/Untitled%206.png" width="80%">
+        <img src="media-prompt-engineering/6.png" width="80%">
         
         [https://huggingface.co/spaces/mrbeliever/AI-Image-Prompt-Generator](https://huggingface.co/spaces/mrbeliever/AI-Image-Prompt-Generator)
         
-    - 혹은 이미지를 생성한 다음 midjourney나 inpainting에서 다시 재처리하여 사용하는 방법도 있다.
+    - 혹은 이미지를 생성한 다음 midjourney나 inpainting에서 다시 재처리하여 사용하는 방법도 있다.  
         
-        <img src="media-prompt-engineering/Untitled%207.png" width="80%">
+        <img src="media-prompt-engineering/7.png" width="80%">
         
         [https://huggingface.co/spaces/CoolSnow/stable-diffusion-models](https://huggingface.co/spaces/CoolSnow/stable-diffusion-models)
         
 - **지현**
     - promptoMANIA에서 원하는 스타일의 프롬프트를 찾은 후 테스트해본 후 최적화
         
-       <img src="media-prompt-engineering/Untitled%208.png" width="80%">
+       <img src="media-prompt-engineering/8.png" width="80%">
         
         [promptoMANIA: AI art community with prompt generator](https://promptomania.com/)
         
     - 노래의 가사를 참고하여 프롬프트로 사용
     - Playground의 SD1.5, SDXL 모델과 다양한 checkpoint를 빠르게 테스트하여 canvas에 프레임마다 원하는 화풍을 이미지를 리스트업, 마음에 드는 화풍의 프롬프트만 참고하여 사용
         
-        <img src="media-prompt-engineering/Untitled%209.png" width="80%">
+        <img src="media-prompt-engineering/9.png" width="80%">
         
         [Free AI image generator: Art, Social Media, Marketing | Playground](https://playgroundai.com/)
         
@@ -136,5 +136,5 @@
     - 이후 실험을 통해 원하는 느낌으로 수정해나간다.
 - **선민**
     - Midjourney에서 원하는 느낌의 이미지를 생성 후, 생성된 이미지를 다시 Midjourney에서 describe 기능을 이용해 표현하도록 만듬
-    - 생성된 describe prompt 4개 중 가장 이미지와 어울리는 prompt를 고르고, 3줄이상 넘어갈 경우 2줄 이내로 줄임
+    - 생성된 describe prompt 4개 중 가장 이미지와 어울리는 prompt를 고르고, 3줄이상 넘어갈 경우 2줄 이내로 줄임  
         <img src="media-prompt-engineering/midjourney.png" width="50%">

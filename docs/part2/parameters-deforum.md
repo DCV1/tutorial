@@ -16,7 +16,7 @@
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled.png)
+![Untitled](media-deforum-parameters/0.png)
 </details>
 
 
@@ -173,7 +173,7 @@
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled%201.png)
+![Untitled](media-deforum-parameters/1.png)
 </details>
 
 
@@ -211,7 +211,7 @@ cadence=2
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled%202.png)
+![Untitled](media-deforum-parameters/2.png)
 </details>
 
 ### 설명
@@ -253,7 +253,7 @@ cadence=2
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled%203.png)
+![Untitled](media-deforum-parameters/3.png)
 </details>
 
 
@@ -321,7 +321,7 @@ cadence=2
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled%206.png)
+![Untitled](media-deforum-parameters/6.png)
 </details>
 
 
@@ -333,7 +333,7 @@ cadence=2
 <details>
 <summary><b>Web UI Screenshot</b></summary>
     
-![Untitled](media-deforum-parameters/Untitled%208.png)
+![Untitled](media-deforum-parameters/8.png)
 </details>
 
 
@@ -348,4 +348,3 @@ cadence=2
     - perlin octaves : 4
     - perlin persistence : 0.5
     - Enable noise multiplier scheduling : 활성화
-
