@@ -47,6 +47,128 @@
 -->
 <br>
 
+## Strength
+<details>
+<summary><b>Web UI Screenshot</b></summary>
+    
+![Untitled](media-deforum-parameters/Untitled%204.png)
+</details>
+
+
+### 설명
+
+- 현재 프레임의 diffusion 과정에 사용할 이전 프레임의 비율 (0~1)
+- 0: 아예 새로운 프레임을 노이즈로부터 새로 생성함
+- 1: 이전 프레임을 그대로 사용함
+
+### 예시
+| strength = 0 | strength = 0.5|
+| :----: | :----: |
+| ![bulb_strength_0.gif](media-deforum-parameters/bulb_strength_0.gif) |![bulb_strength_0.5.gif](media-deforum-parameters/bulb_strength_0.5.gif)|
+| strength = 0.7 | strength = 0.9|
+| ![bulb_strength_0.gif](media-deforum-parameters/bulb_strength_0.7.gif) |![bulb_strength_0.5.gif](media-deforum-parameters/bulb_strength_0.9.gif)|
+- Prompt : a light bulb is put on a table near a gray wall, in the style of light cyan and gold, use of screen tones, youthful energy, iso 200, organic material, clean-lined, award-winning
+    <!--
+    ![bulb_strength_0.gif](media-deforum-parameters/bulb_strength_0.gif)
+    
+    strength = 0
+    
+    ![bulb_strength_0.5.gif](media-deforum-parameters/bulb_strength_0.5.gif)
+    
+    strength = 0.5
+    
+    ![bulb_strength_0.7.gif](media-deforum-parameters/bulb_strength_0.7.gif)
+    
+    strength = 0.7
+    
+    ![bulb_strength_0.9.gif](media-deforum-parameters/bulb_strength_0.9.gif)
+    
+    strength = 0.9
+    -->
+### 팁
+
+- 값이 클 수록 이전 프레임 재활용 비율이 증가하므로 영상 생성이 짧게 걸림
+- 음악의 진폭에 반비례하게 넣으면 음악에 반응하는 영상 생성 가능
+- frame별로 strength에 적절한 변화를 주면 다음과 같은 효과를 볼 수 있다.
+1. 높은 값에서 → 낮은 값으로: 화면이 전환되는 느낌을 줄 수 있다.
+    
+    ![deforum_strength_1.gif](media-deforum-parameters/deforum_strength_1.gif)
+    
+    - 음악에 생동감을 부여할 수 있다. 이런 효과는 EDM에서 잘 써먹을 수 있는데, EDM에서 킥 사운드가 두드러지는 음악을 사용할 때 효과가 두드러진다. 예시 keyframes
+    - 사용예시        
+        ```
+        {0: 0.7, 299: 0.7, 300: 0.3, 320: 0.3, 321: 0.7}
+        ```
+    
+    - audio reactive에 적절히 활용하면 [작품에 효과적으로 생동감을 부여할 수 있다.](https://www.youtube.com/shorts/a3xuiGNyWYs)
+2. 낮은 값에서 → 높은 값으로: 해당 장면에 집중하는 효과를 줄 수 있다.
+
+    ![deforum_strength_reverse.gif](media-deforum-parameters/deforum_strength_reverse.gif)
+
+3. strength와 motion에 함께 효과를 준 경우.
+    - strength에 변화를 주면서 동시에 motion(zoom이나 상하좌우로 움직이는 카메라 모션)에도 변화를 주게 된다면, 착시효과처럼 관객이 부자연스러움을 덜 느끼면서 전환효과를 줄 수 있다.
+    - 예시: [https://youtu.be/If77St4tbXU?t=24](https://youtu.be/If77St4tbXU?t=24)
+<br>
+
+## CFG
+<details>
+<summary><b>Web UI Screenshot</b></summary>
+    
+![Untitled](media-deforum-parameters/Untitled%205.png)
+</details>
+
+
+### 설명
+
+- Classifier-free-guidance의 줄임말로, 이미 생성 시 텍스트 프롬프트를 얼마나 따르게 할지에 대한 설정값
+- CFG가 높을수록 생성된 이미지가 프롬프트를 따라가게 되지만 지나치게 높을 경우 인공물들이 많이 생기게 되므로 7 정도가 가장 자연스러움
+
+### 예시
+| CFG = 7| CFG = 20|
+| :----: | :----: |
+| ![cfg7.gif](media-deforum-parameters/cfg7.gif) |![cfg20.gif](media-deforum-parameters/cfg20.gif)|
+- prompt
+    
+    ```
+    {"0": "an apple", "24": "a banana", "48": "a coconut", "72": "a durian", "96": "an apple, a banana, a coconut, a durian"}
+    ```
+    <!--
+    ![cfg7.gif](media-deforum-parameters/cfg7.gif)
+    
+    CFG=7
+    
+    ![cfg20.gif](media-deforum-parameters/cfg20.gif)
+    
+    CFG=20
+    -->
+
+### 팁
+
+- CFG가 낮을수록 프롬프트를 따르지 않기에 CFG가 낮아야 creative results가 생성된다고 생각할 수 있지만 CFG가 높으면 artifacts가 많이 생성되면서 어느 관점에서는 creative한 것처럼 보일 수 있음
+<br>
+
+## Motion
+<details>
+<summary><b>Web UI Screenshot</b></summary>
+    
+![Untitled](media-deforum-parameters/Untitled%207.png)
+</details>
+
+
+### 설명
+
+- 영상이 이동 방식(카메라 무브먼트)를 조절할 수 있는 파라미터
+  
+![](media-deforum-parameters/motion_png.PNG)
+
+### 팁
+
+- sin, exp와 같은 수식도 사용 가능함
+- 카메라 무빙과 회전을 함께 주게 되면, 입체감있게 도는 효과를 줄 수 있다.
+    
+    
+<br>
+
 ## Cadence
 <details>
 <summary><b>Web UI Screenshot</b></summary>
@@ -126,6 +248,7 @@ cadence=2
 - zoom in에서는 차이가 보이지 않고 zoom out시에만 적용된다.
 <br>
 
+
 ## Guided Images
 <details>
 <summary><b>Web UI Screenshot</b></summary>
@@ -150,142 +273,48 @@ cadence=2
     
 </details>
     
-1. fps : prompt 입력 시 fps의 범위에 따라 guided image 반영률이 달라짐
-    | fps = 30 | fps = 10 |
-    | :----: | :----: |
-    |![제목 없는 디자인 (1).gif](media-deforum-parameters/guided1.gif) | ![제목 없는 디자인 (2).gif](media-deforum-parameters/guided2.gif)|
-    | marble block → sculpture → statue → colosseum 순으로 모두 나타나있음| marble block → colosseum 만 표현됨|
+<details>
+<summary> 1. fps : prompt 입력 시 fps의 범위에 따라 guided image 반영률이 달라짐 </summary>
+    
+| fps = 30 | fps = 10 |
+| :----: | :----: |
+|![제목 없는 디자인 (1).gif](media-deforum-parameters/guided1.gif) | ![제목 없는 디자인 (2).gif](media-deforum-parameters/guided2.gif)|
+| marble block → sculpture → statue → colosseum 순으로 모두 나타나있음| marble block → colosseum 만 표현됨|
 
-
-2. Guided image strength : guided image의 strength에 따라 생성된 영상에서 guided image를 유지하는 정도가 달라짐
-    | strength = 0.8 | strength = 0.1 |
-    | :----: | :----: |
-    |![제목 없는 디자인 (3).gif](media-deforum-parameters/guided3.gif) |![제목 없는 디자인 (7).gif](media-deforum-parameters/guided7.gif)|
-    - Global strength / Prompts
-        - Global Strength : 0.5
-        - Prompt: Michelangelo constructs a sculpture
-
-3. Global strength : guided image에서 prompt 반영률이 달라짐
-   | strength = 0.8 | strength = 0.1 |
-    | :----: | :----: |
-    |![제목 없는 디자인 (3).gif](media-deforum-parameters/guided6.gif) |![제목 없는 디자인 (5).gif](media-deforum-parameters/guided5.gif)|
-    - Guided image strength / Prompts
-        - Guided image strength: 0.5
-        - Prompt: Michelangelo constructs a sculpture
-
+</details>
+<details>
+<summary> 2. Guided image strength : guided image의 strength에 따라 생성된 영상에서 guided image를 유지하는 정도가 달라짐 </summary>
+    
+| strength = 0.8 | strength = 0.1 |
+| :----: | :----: |
+|![제목 없는 디자인 (3).gif](media-deforum-parameters/guided3.gif) |![제목 없는 디자인 (7).gif](media-deforum-parameters/guided7.gif)|
+- Global strength / Prompts
+    - Global Strength : 0.5
+    - Prompt: Michelangelo constructs a sculpture
+        
+</details>
+<details>
+<summary> 3. Global strength : guided image에서 prompt 반영률이 달라짐 </summary>
+    
+| strength = 0.8 | strength = 0.1 |
+| :----: | :----: |
+|![제목 없는 디자인 (3).gif](media-deforum-parameters/guided6.gif) |![제목 없는 디자인 (5).gif](media-deforum-parameters/guided5.gif)|
+- Guided image strength / Prompts
+    - Guided image strength: 0.5
+    - Prompt: Michelangelo constructs a sculpture
+    
+</details>
 
 ### 팁
 
 - guided images와 prompt 입력 시 fps(frame per second)를 낮추는 경우 guided images와 prompt가 frame 생성 속도에 맞추지 못해 제대로 반영되지 않음
-- Guided image strength를 높게 할 경우, guided image를 유지하며 이미지가 생성됨
-    - Guided image strength를 낮게 할 경우, guided image가 덜 유지됨
-- Global strength를 높게 할 경우, prompt보다 guided image를 유지하며 이미지가 생성됨
-    - Global strength를 낮게 할 경우, guided image보다 prompt에 맞춰 이미지가 생성됨
+- Guided image strength를 높게 할 경우, guided image를 유지하며 이미지가 생성됨 <-> Guided image strength를 낮게 할 경우, guided image가 덜 유지됨
+- Global strength를 높게 할 경우, prompt보다 guided image를 유지하며 이미지가 생성됨 <-> Global strength를 낮게 할 경우, guided image보다 prompt에 맞춰 이미지가 생성됨
 - Guided image strength를 낮추고 Global strength를 높게 할 경우, guided images 준 직후에만 이미지를 따라가고 그 이후에는 prompt를 다시 따라가서 영상이 부자연스러워 보임
-- Guided image를 최대한 유지하고 싶은 경우, Guided image strength를 높이는 것도 중요하지만 Global strength를 높이는 것이 Guided image를 유지하는데 더 효과적임
+- Guided image를 최대한 유지하고 싶은 경우, Guided image strength를 높이는 것도 중요하지만 **Global strength**를 높이는 것이 Guided image를 유지하는데 더 효과적임
     - Global strength(= prompt 반영률)이 Guided image strength보다 deforum 영상 생성에 더 영향을 많이 주는 parameter인 것 같음
 - Error: 'images do not match'. Before reporting, please check your schedules/ init values. Full error message is in your terminal/ cli.
     - 원인은 작품의 사이즈가 8의 배수가 아니면 발생한다.
-<br>
-
-## Strength
-<details>
-<summary><b>Web UI Screenshot</b></summary>
-    
-![Untitled](media-deforum-parameters/4.png)
-</details>
-
-
-### 설명
-
-- 현재 프레임의 diffusion 과정에 사용할 이전 프레임의 비율 (0~1)
-- 0: 아예 새로운 프레임을 노이즈로부터 새로 생성함
-- 1: 이전 프레임을 그대로 사용함
-
-### 예시
-| strength = 0 | strength = 0.5|
-| :----: | :----: |
-| ![bulb_strength_0.gif](media-deforum-parameters/bulb_strength_0.gif) |![bulb_strength_0.5.gif](media-deforum-parameters/bulb_strength_0.5.gif)|
-| strength = 0.7 | strength = 0.9|
-| ![bulb_strength_0.gif](media-deforum-parameters/bulb_strength_0.7.gif) |![bulb_strength_0.5.gif](media-deforum-parameters/bulb_strength_0.9.gif)|
-- Prompt : a light bulb is put on a table near a gray wall, in the style of light cyan and gold, use of screen tones, youthful energy, iso 200, organic material, clean-lined, award-winning
-    <!--
-    ![bulb_strength_0.gif](media-deforum-parameters/bulb_strength_0.gif)
-    
-    strength = 0
-    
-    ![bulb_strength_0.5.gif](media-deforum-parameters/bulb_strength_0.5.gif)
-    
-    strength = 0.5
-    
-    ![bulb_strength_0.7.gif](media-deforum-parameters/bulb_strength_0.7.gif)
-    
-    strength = 0.7
-    
-    ![bulb_strength_0.9.gif](media-deforum-parameters/bulb_strength_0.9.gif)
-    
-    strength = 0.9
-    -->
-### 팁
-
-- 값이 클 수록 이전 프레임 재활용 비율이 증가하므로 영상 생성이 짧게 걸림
-- 음악의 진폭에 반비례하게 넣으면 음악에 반응하는 영상 생성 가능
-- frame별로 strength에 적절한 변화를 주면 다음과 같은 효과를 볼 수 있다.
-1. 높은 값에서 → 낮은 값으로: 화면이 전환되는 느낌을 줄 수 있다.
-    
-    ![deforum_strength_1.gif](media-deforum-parameters/deforum_strength_1.gif)
-    
-    - 음악에 생동감을 부여할 수 있다. 이런 효과는 EDM에서 잘 써먹을 수 있는데, EDM에서 킥 사운드가 두드러지는 음악을 사용할 때 효과가 두드러진다. 예시 keyframes
-    - 사용예시        
-        ```
-        {0: 0.7, 299: 0.7, 300: 0.3, 320: 0.3, 321: 0.7}
-        ```
-    
-    - audio reactive에 적절히 활용하면 [작품에 효과적으로 생동감을 부여할 수 있다.](https://www.youtube.com/shorts/a3xuiGNyWYs)
-2. 낮은 값에서 → 높은 값으로: 해당 장면에 집중하는 효과를 줄 수 있다.
-
-    ![deforum_strength_reverse.gif](media-deforum-parameters/deforum_strength_reverse.gif)
-
-3. strength와 motion에 함께 효과를 준 경우.
-    - strength에 변화를 주면서 동시에 motion(zoom이나 상하좌우로 움직이는 카메라 모션)에도 변화를 주게 된다면, 착시효과처럼 관객이 부자연스러움을 덜 느끼면서 전환효과를 줄 수 있다.
-    - 예시: [https://youtu.be/If77St4tbXU?t=24](https://youtu.be/If77St4tbXU?t=24)
-<br>
-
-## CFG
-<details>
-<summary><b>Web UI Screenshot</b></summary>
-    
-![Untitled](media-deforum-parameters/5.png)
-</details>
-
-
-### 설명
-
-- Classifier-free-guidance의 줄임말로, 이미 생성 시 텍스트 프롬프트를 얼마나 따르게 할지에 대한 설정값
-- CFG가 높을수록 생성된 이미지가 프롬프트를 따라가게 되지만 지나치게 높을 경우 인공물들이 많이 생기게 되므로 7 정도가 가장 자연스러움
-
-### 예시
-| CFG = 7| CFG = 20|
-| :----: | :----: |
-| ![cfg7.gif](media-deforum-parameters/cfg7.gif) |![cfg20.gif](media-deforum-parameters/cfg20.gif)|
-- prompt
-    
-    ```
-    {"0": "an apple", "24": "a banana", "48": "a coconut", "72": "a durian", "96": "an apple, a banana, a coconut, a durian"}
-    ```
-    <!--
-    ![cfg7.gif](media-deforum-parameters/cfg7.gif)
-    
-    CFG=7
-    
-    ![cfg20.gif](media-deforum-parameters/cfg20.gif)
-    
-    CFG=20
-    -->
-
-### 팁
-
-- CFG가 낮을수록 프롬프트를 따르지 않기에 CFG가 낮아야 creative results가 생성된다고 생각할 수 있지만 CFG가 높으면 artifacts가 많이 생성되면서 어느 관점에서는 creative한 것처럼 보일 수 있음
 <br>
 
 ## Subseed, Step, Sampler, Checkpoint
@@ -298,29 +327,6 @@ cadence=2
 
 - 해당 파라미터들의 Schedule을 지정할 수 있는 부분
 
-<br>
-
-## Motion
-<details>
-<summary><b>Web UI Screenshot</b></summary>
-    
-![Untitled](media-deforum-parameters/7.png)
-</details>
-
-
-### 설명
-
-- 영상이 이동 방식(카메라 무브먼트)를 조절할 수 있는 파라미터
-
-![](media-deforum-parameters/motion_png.PNG)
-
-### 팁
-
-- sin, exp와 같은 수식도 사용 가능함
-- 카메라 무빙과 회전을 함께 주게 되면, 입체감있게 도는 효과를 줄 수 있다.
-    
-    ![화면 기록 2024-01-23 오후 9.48.39.gif](media-deforum-parameters/camera.gif)
-    
 <br>
 
 ## Noise
@@ -342,4 +348,3 @@ cadence=2
     - perlin octaves : 4
     - perlin persistence : 0.5
     - Enable noise multiplier scheduling : 활성화
-
