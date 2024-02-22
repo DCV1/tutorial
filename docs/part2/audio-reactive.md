@@ -47,19 +47,13 @@
     </aside>
     
     1. Linear Function
-        <!--
-        ${y=({b-a \over h})x+a}$
-       -->
+
         ![linear](media-audio-reactive/linear.PNG)
     3. Convex Function
-        <!--
-        $y={b-a\over \ln(ch+1)}\ln(cx+1)+a$
-        -->
+       
        ![convex](media-audio-reactive/convex.PNG)
-    5. Concave Function 
-        <!--
-        $y=(a+c)x - c\exp({\ln ({k_1-b \over c}) \over h} x)$
-        -->
+    5. Concave Function
+       
        ![concave](media-audio-reactive/concave.PNG)
     - 예시
         
@@ -112,24 +106,20 @@
     2. 해당 구간에 거의 일정한 주기로 반복되는 것을 볼 수 있는데, 해당 구간을 집어보면 약 0.26초가 나온다. 
         ![Pasted image 20240123210810.png](media-audio-reactive/Pasted_image_20240123210810.png)
             
-    3. 따라서 ![cos26](media-audio-reactive/cos26.PNG)를 Rotation_X나 Rotation_Y 에 집어넣으면 된다.
+    3. 따라서 cos(2\*pi\*t/0.26)를 Rotation_X나 Rotation_Y 에 집어넣으면 된다.
     4. 그런데, 진폭을 1이상 올리면 아래와 같이 Line이나 frame이 발생하는 현상이 있어서 진폭을 0.5 이하로 줄이되, 주기를 다소 늘리는 편을 추천한다. 
 
-        - ![cos26](media-audio-reactive/cos26.PNG)
+        - cos(2\*pi\*t/0.26)
             
-            <!-- ![20240126182538.gif](media-audio-reactive/20240126182538.gif) -->
+        - cos(2\*pi\*t/0.52)
             
-        - ![cos52](media-audio-reactive/cos52.PNG)
-            
-            <!-- ![20240126185207.gif](media-audio-reactive/20240126185207.gif) -->
-            
-        - Final Movements ![final](media-audio-reactive/final_movement.PNG)
+        - Final Movements 0.4 x cos(2\*pi\*t/11)
 
             ![output_move.gif](media-audio-reactive/output_move.gif)
             
         
 - 예시 (rotation 조정)
     - rotation_x는 위/아래로 회전하는 효과를 주고, rotation_y는 좌/우를 회전하는 효과를 준다. 이 때, 밑바닥에서 올라가듯이 날아다니는 느낌을 주고 싶다면  rotation_x와 rotation_y를 동시에 sin 함수를 사용하여 주기를 300 이상을 넣어보자.  
-    - rotation_x: ![rotationx](media-audio-reactive/rotationX.PNG)
+    - rotation_x: 0.5 x sin(2\*pi\*t/300), rotation_y: 0.3 x sin(2\*pi\*t/500) 
         
         ![output_move_slow.gif](media-audio-reactive/output_move_slow.gif)
