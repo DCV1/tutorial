@@ -61,9 +61,9 @@ const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-
-<script type="text/javascript" src="/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/part2/audio-reactive';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -538,12 +538,15 @@ document.write(`
 <ul>
 <li><p>$$\mathrm{cos}(2\pi\mathrm{t}/0.26)$$</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../../_images/20240126182538.gif"><img alt="20240126182538.gif" class="bg-primary mb-1 align-center" src="../../_images/20240126182538.gif" style="width: 50%;" /></a>
+  <!-- ![20240126182538.gif](media-audio-reactive/20240126182538.gif) -->
 </li>
 <li><p>$$\mathrm{cos}(2\pi\mathrm{t}/0.52)$$</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../../_images/20240126185207.gif"><img alt="20240126185207.gif" class="bg-primary mb-1 align-center" src="../../_images/20240126185207.gif" style="width: 50%;" /></a>
+  <!-- ![20240126185207.gif](media-audio-reactive/20240126185207.gif) -->
 </li>
 <li><p>Final Movements $$0.4\times\mathrm{cos}(2\pi\mathrm{t}/11)$$</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../../_images/output_move.gif"><img alt="output_move.gif" class="bg-primary mb-1 align-center" src="../../_images/output_move.gif" style="width: 50%;" /></a>
+  <!-- ![output_move.gif](media-audio-reactive/output_move.gif) -->
 </li>
 </ul>
 </li>
@@ -554,6 +557,7 @@ document.write(`
 <li><p>rotation_x는 위/아래로 회전하는 효과를 주고, rotation_y는 좌/우를 회전하는 효과를 준다. 이 때, 밑바닥에서 올라가듯이 날아다니는 느낌을 주고 싶다면  rotation_x와 rotation_y를 동시에 sin 함수를 사용하여 주기를 300 이상을 넣어보자.</p></li>
 <li><p>rotation_x: $0.5\times\sin(2\pi\mathrm{t}/300)$, rotation_y: $0.3\times\mathrm{sin}(2\pi\mathrm{t}/500)$</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../../_images/output_move_slow.gif"><img alt="output_move_slow.gif" class="bg-primary mb-1 align-center" src="../../_images/output_move_slow.gif" style="width: 50%;" /></a>
+  <!-- ![output_move_slow.gif](media-audio-reactive/output_move_slow.gif) -->
 </li>
 </ul>
 </li>
