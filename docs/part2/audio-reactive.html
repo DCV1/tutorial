@@ -61,6 +61,10 @@ const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/part2/audio-reactive';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -73,7 +77,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+    <script>
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true,
+        }
+      });
+    </script>
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -528,20 +539,20 @@ document.write(`
 <li><p>스펙트럼</p></li>
 </ul>
 </li>
-<li><p>해당 구간에 거의 일정한 주기로 반복되는 것을 볼 수 있는데, 해당 구간을 집어보면 약 0.26초가 나온다.
+<li><p>해당 구간에 거의 일정한 주기로 반복되는 것을 볼 수 있는데, 해당 구간을 집어보면 약 0.26초가 나온다.  
 <img alt="Pasted image 20240123210810.png" src="../../_images/Pasted_image_20240123210810.png" /></p></li>
 <li><p>따라서 $\mathrm{cos}(2\pi\mathrm{t}/0.26)$를 Rotation_X나 Rotation_Y 에 집어넣으면 된다.</p></li>
 <li><p>그런데, 진폭을 1이상 올리면 아래와 같이 Line이나 frame이 발생하는 현상이 있어서 진폭을 0.5 이하로 줄이되, 주기를 다소 늘리는 편을 추천한다.</p>
 <ul>
-<li><p>$\mathrm{cos}(2\pi\mathrm{t}/0.26)$</p>
+<li><p>$$\mathrm{cos}(2\pi\mathrm{t}/0.26)$$</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../../_images/20240126182538.gif"><img alt="20240126182538.gif" class="bg-primary mb-1 align-center" src="../../_images/20240126182538.gif" style="width: 50%;" /></a>
   <!-- ![20240126182538.gif](media-audio-reactive/20240126182538.gif) -->
 </li>
-<li><p>$\mathrm{cos}(2\pi\mathrm{t}/0.52)$</p>
+<li><p>$$\mathrm{cos}(2\pi\mathrm{t}/0.52)$$</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../../_images/20240126185207.gif"><img alt="20240126185207.gif" class="bg-primary mb-1 align-center" src="../../_images/20240126185207.gif" style="width: 50%;" /></a>
   <!-- ![20240126185207.gif](media-audio-reactive/20240126185207.gif) -->
 </li>
-<li><p>Final Movements $0.4\times\mathrm{cos}(2\pi\mathrm{t}/11)$</p>
+<li><p>Final Movements $$0.4\times\mathrm{cos}(2\pi\mathrm{t}/11)$$</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../../_images/output_move.gif"><img alt="output_move.gif" class="bg-primary mb-1 align-center" src="../../_images/output_move.gif" style="width: 50%;" /></a>
   <!-- ![output_move.gif](media-audio-reactive/output_move.gif) -->
 </li>
@@ -552,7 +563,7 @@ document.write(`
 <li><p>예시 (rotation 조정)</p>
 <ul>
 <li><p>rotation_x는 위/아래로 회전하는 효과를 주고, rotation_y는 좌/우를 회전하는 효과를 준다. 이 때, 밑바닥에서 올라가듯이 날아다니는 느낌을 주고 싶다면  rotation_x와 rotation_y를 동시에 sin 함수를 사용하여 주기를 300 이상을 넣어보자.</p></li>
-<li><p>rotation_x: $0.5\times\mathrm{sin}(2\pi\mathrm{t}/300)$, rotation_y: $0.3\times\mathrm{sin}(2\pi\mathrm{t}/500)$</p>
+<li><p>rotation_x: $0.5\times\sin(2\pi\mathrm{t}/300)$, rotation_y: $0.3\times\mathrm{sin}(2\pi\mathrm{t}/500)$</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../../_images/output_move_slow.gif"><img alt="output_move_slow.gif" class="bg-primary mb-1 align-center" src="../../_images/output_move_slow.gif" style="width: 50%;" /></a>
   <!-- ![output_move_slow.gif](media-audio-reactive/output_move_slow.gif) -->
 </li>
