@@ -40,22 +40,17 @@
         
         ![Untitled](media-audio-reactive/4.png)
         
-    
     💡 $x = 0$(최소 진폭)일 때 strength가 $a$ , $x = h$(최대 진폭) 일 때 strength가 $b$ 가 되는 함수 찾기
     
-    
     1. Linear Function
-        
-        ${y=({b-a \over h})x+a}$
-        
-    2. Convex Function
-        
-        $y={b-a\over \ln(ch+1)}\ln(cx+1)+a$
-        
-    3. Concave Function 
-        
-        $y=(a+c)x - c\exp({\ln ({k_1-b \over c}) \over h} x)$
-        
+
+        ![linear](media-audio-reactive/linear.PNG)
+    3. Convex Function
+       
+       ![convex](media-audio-reactive/convex.PNG)
+    5. Concave Function
+       
+       ![concave](media-audio-reactive/concave.PNG)
     - 예시
         
         ![a=1, b=0.5, h=1](media-audio-reactive/5.png)
@@ -108,51 +103,20 @@
         
         ![Pasted image 20240123210810.png](media-audio-reactive/Pasted_image_20240123210810.png)
             
-    3. 따라서 $\mathrm{cos}(2\pi\mathrm{t}/0.26)$를 Rotation_X나 Rotation_Y 에 집어넣으면 된다.
+    3. 따라서 cos(2\*pi\*t/0.26)를 Rotation_X나 Rotation_Y 에 집어넣으면 된다.
     4. 그런데, 진폭을 1이상 올리면 아래와 같이 Line이나 frame이 발생하는 현상이 있어서 진폭을 0.5 이하로 줄이되, 주기를 다소 늘리는 편을 추천한다. 
-        - $\mathrm{cos}(2\pi\mathrm{t}/0.26)$  
 
-            ```{image} media-audio-reactive/20240126182538.gif
-            :alt: 20240126182538.gif
-            :class: bg-primary mb-1
-            :width: 50%
-            :align: center
-            ```
+        - cos(2\*pi\*t/0.26)
             
-            <!-- ![20240126182538.gif](media-audio-reactive/20240126182538.gif) -->
+        - cos(2\*pi\*t/0.52)
             
-        - $\mathrm{cos}(2\pi\mathrm{t}/0.52)$  
+        - Final Movements 0.4 x cos(2\*pi\*t/11)
 
-            ```{image} media-audio-reactive/20240126185207.gif
-            :alt: 20240126185207.gif
-            :class: bg-primary mb-1
-            :width: 50%
-            :align: center
-            ```
-            
-            <!-- ![20240126185207.gif](media-audio-reactive/20240126185207.gif) -->
-            
-        - Final Movements $0.4\times\mathrm{cos}(2\pi\mathrm{t}/11)$   
-
-            ```{image} media-audio-reactive/output_move.gif
-            :alt: output_move.gif
-            :class: bg-primary mb-1
-            :width: 50%
-            :align: center
-            ```
-            
-            <!-- ![output_move.gif](media-audio-reactive/output_move.gif) -->
+            ![output_move.gif](media-audio-reactive/output_move.gif)
             
         
 - 예시 (rotation 조정)
-    - rotation_x는 위/아래로 회전하는 효과를 주고, rotation_y는 좌/우를 회전하는 효과를 준다. 이 때, 밑바닥에서 올라가듯이 날아다니는 느낌을 주고 싶다면  rotation_x와 rotation_y를 동시에 sin 함수를 사용하여 주기를 300 이상을 넣어보자.
-    - rotation_x: $0.5\times\mathrm{sin}(2\pi\mathrm{t}/300)$, rotation_y: $0.3\times\mathrm{sin}(2\pi\mathrm{t}/500)$ 
-
-        ```{image} media-audio-reactive/output_move_slow.gif
-        :alt: output_move_slow.gif
-        :class: bg-primary mb-1
-        :width: 50%
-        :align: center
-        ```
-
-        <!-- ![output_move_slow.gif](media-audio-reactive/output_move_slow.gif) -->
+    - rotation_x는 위/아래로 회전하는 효과를 주고, rotation_y는 좌/우를 회전하는 효과를 준다. 이 때, 밑바닥에서 올라가듯이 날아다니는 느낌을 주고 싶다면  rotation_x와 rotation_y를 동시에 sin 함수를 사용하여 주기를 300 이상을 넣어보자.  
+    - rotation_x: 0.5 x sin(2\*pi\*t/300), rotation_y: 0.3 x sin(2\*pi\*t/500) 
+        
+        ![output_move_slow.gif](media-audio-reactive/output_move_slow.gif)
