@@ -41,10 +41,8 @@
         ![Untitled](media-audio-reactive/4.png)
         
     
-    <aside>
-    💡 $x=0$(최소 진폭)일 때 strength가 $a$, $x=h$(최대 진폭) 일 때 strength가 $b$가 되는 함수 찾기
+    💡 $x = 0$(최소 진폭)일 때 strength가 $a$ , $x = h$(최대 진폭) 일 때 strength가 $b$ 가 되는 함수 찾기
     
-    </aside>
     
     1. Linear Function
         
@@ -106,7 +104,8 @@
         
         - 스펙트럼
         
-    2. 해당 구간에 거의 일정한 주기로 반복되는 것을 볼 수 있는데, 해당 구간을 집어보면 약 0.26초가 나온다. 
+    2. 해당 구간에 거의 일정한 주기로 반복되는 것을 볼 수 있는데, 해당 구간을 집어보면 약 0.26초가 나온다.   
+        
         ![Pasted image 20240123210810.png](media-audio-reactive/Pasted_image_20240123210810.png)
             
     3. 따라서 $\mathrm{cos}(2\pi\mathrm{t}/0.26)$를 Rotation_X나 Rotation_Y 에 집어넣으면 된다.
